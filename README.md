@@ -1,8 +1,6 @@
 # projectANY
 Team Project for INST630 Intro to Programming
 
-Test Connection
+Topic: Tutoring website for the UMD Community
 
 By Anavi, Natalie, Yirang
-
-Anavi Hi
