@@ -82,7 +82,7 @@ body {
     color: #777;
 }
 
-#out {text-align: center;}
+a.out {text-align: center;}
 
 
 /* Fallback for Edge
