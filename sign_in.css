@@ -82,8 +82,17 @@ body {
     color: #777;
 }
 
-a.out:link {position: absolute; bottom:0px;}
+.out {
+    font-size: 18px;
+    text-align: center;
+}
 
+.footer {
+    font-size: 15px;
+    text-align: center;
+    color: grey;
+    padding-top: 30px;
+}
 
 /* Fallback for Edge
 -------------------------------------------------- */
