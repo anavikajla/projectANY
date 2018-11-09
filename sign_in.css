@@ -82,7 +82,7 @@ body {
     color: #777;
 }
 
-a.out:link {position: relative;}
+a.out:link {position: absolute; bottom:0px;}
 
 
 /* Fallback for Edge
