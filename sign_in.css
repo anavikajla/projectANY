@@ -82,6 +82,9 @@ body {
     color: #777;
 }
 
+#signout {aline-content: center;}
+
+
 /* Fallback for Edge
 -------------------------------------------------- */
 @supports (-ms-ime-align: auto) {
