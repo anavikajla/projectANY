@@ -29,27 +29,12 @@
         <div class="text-center mb-4">
             <img class="mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
             <h1 class="h3 mb-3 font-weight-normal">Welcome to TerpTutors!</h1>
-            <p>Sign in or Sign up</p>
+            <p>Sign in </p>
+            <div class="g-signin2 ml-3" data-onsuccess="onSignIn" data-theme="dark"></div>
         </div>
 
-        <div class="form-label-group">
-            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-            <label for="inputEmail">Email address</label>
-        </div>
-
-        <div class="form-label-group">
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-            <label for="inputPassword">Password</label>
-        </div>
-
-        <div class="checkbox mb-3">
-            <label>
-                <input type="checkbox" value="remember-me"> Remember me
-            </label>
-        </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-
-        <button class="=btn btn-lg g-signin2" data-onsuccess="onSignIn" data-theme="dark">Google Sign In</button>
+	
+       	
         <script>
             function onSignIn(googleUser) {
                 // Useful data for your client-side scripts:
@@ -65,9 +50,22 @@
                 var id_token = googleUser.getAuthResponse().id_token;
                 console.log("ID Token: " + id_token);
             }
+            
+            function renderButton() {
+				  gapi.signin2.render('g-signin2', {
+					'scope': 'profile email',
+					'width': 240,
+					'height': 50,
+					'longtitle': true,
+					'theme': 'dark',
+					'onsuccess': onSuccess,
+					'onfailure': onFailure
+				  });
+				}
         </script>
 
-        <div class="out">
+        <!-- 
+<div class="out">
             <a href="#" onclick="signOut()">Sign out</a>
             <script>
                 function signOut() {
@@ -78,6 +76,7 @@
                 }
             </script>
         </div>
+ -->
         <p class="footer">&copy; 2018 ANY Project</p>
     </form>
 
