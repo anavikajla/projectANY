@@ -1,3 +1,8 @@
 img.card-img-top {
     height: 200px;
 }
+img.card-img-top2 {
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+}
