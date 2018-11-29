@@ -18,8 +18,8 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav navbar-right">
+    <div class="collapse navbar-collapse w-100 order-3 dual-collapse2" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
@@ -27,10 +27,10 @@
                 <a class="nav-link" href="#">Find Tutor</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Find Student</a>
+                <a class="nav-link" id="studentPage" href="#">Find Student</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-info" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Anavi
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -47,13 +47,13 @@
 
     <section class="jumbotron">
         <div class="container">
-            <h1 class="jumbotron-heading  text-center">Student Page</h1>
-            <p class="lead text-muted  text-center">Search your students by using filter below</p>
+            <h1 class="jumbotron-heading text-center">Student Page</h1>
+            <p class="lead text-muted  text-center">Search your students by using filter below</p></br>
 
             <form>
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Department</label>
-                    <div class="col-sm-8">
+                    <label class="col-sm-2 ml-5 col-form-label">Department</label>
+                    <div class="col-sm-7">
                         <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                             <option selected>Choose...</option>
                             <option value="1">Human Computer Interaction</option>
@@ -65,15 +65,15 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="subject" class="col-sm-2 col-form-label">Subject</label>
-                    <div class="col-sm-8">
+                    <label for="subject" class="col-sm-2 ml-5 col-form-label">Subject</label>
+                    <div class="col-sm-7">
                         <input type="subejct" class="form-control" id="subject" placeholder="e.g. English">
                     </div>
                 </div>
                 <fieldset class="form-group">
                     <div class="row">
-                        <legend class="col-form-label col-sm-2 pt-0">Preferred Gender</legend>
-                        <div class="col-sm-10">
+                        <legend class="col-form-label col-sm-2 pt-0 ml-5">Preferred Gender</legend>
+                        <div class="col-sm-7">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
                                 <label class="form-check-label" for="gridRadios1">
@@ -91,8 +91,8 @@
                 </fieldset>
 
                 <div class="form-group row">
-                <label for="customRange3" class="col-sm-2 col-form-label">Price per hour</label>
-                <div class="col-sm-8">
+                <label for="customRange3" class="col-sm-2 col-form-label ml-5 ">Price per hour</label>
+                <div class="col-sm-7">
                 <input type="range" class="custom-range" min="0" max="5" step="0.5" id="customRange3">
                 </div>
                 </div>
@@ -118,52 +118,52 @@
                              src="pictures/student pic/pic1.jpeg"
                              alt="Card image cap">
                         <div class="card-body">
+                            <p class="card-text">User Name</p>
                             <p class="card-text">Subject</p>
                             <p class="card-text">Gender</p>
                             <p class="card-text">Price</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                <div class="btn-group ml-5">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Book an appointment</button>
                                 </div>
-                                <small class="text-muted">9 mins</small>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
                         <img class="card-img-top thumbnail"
                              src="pictures/blank_female.svg"
                              alt="Card image cap">
                         <div class="card-body">
+                            <p class="card-text">User Name</p>
                             <p class="card-text">Subject</p>
                             <p class="card-text">Gender</p>
                             <p class="card-text">Price</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                <div class="btn-group ml-5">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Book an appointment</button>
                                 </div>
-                                <small class="text-muted">9 mins</small>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
                         <img class="card-img-top thumbnail"
                              src="pictures/blank_female.svg"
                              alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text">User Name</p>
+                            <p class="card-text">Subject</p>
+                            <p class="card-text">Gender</p>
+                            <p class="card-text">Price</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                <div class="btn-group ml-5">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Book an appointment</button>
                                 </div>
-                                <small class="text-muted">9 mins</small>
                             </div>
                         </div>
                     </div>
@@ -175,50 +175,52 @@
                              src="pictures/blank_male.svg"
                              alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text">User Name</p>
+                            <p class="card-text">Subject</p>
+                            <p class="card-text">Gender</p>
+                            <p class="card-text">Price</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                <div class="btn-group ml-5">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Book an appointment</button>
                                 </div>
-                                <small class="text-muted">9 mins</small>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
                         <img class="card-img-top"
                              src="pictures/student pic/pic2.jpeg"
                              alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text">User Name</p>
+                            <p class="card-text">Subject</p>
+                            <p class="card-text">Gender</p>
+                            <p class="card-text">Price</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                <div class="btn-group ml-5">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Book an appointment</button>
                                 </div>
-                                <small class="text-muted">9 mins</small>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
                         <img class="card-img-top"
                              src="pictures/student pic/pic3.jpeg"
                              alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text">User Name</p>
+                            <p class="card-text">Subject</p>
+                            <p class="card-text">Gender</p>
+                            <p class="card-text">Price</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                <div class="btn-group ml-5">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Book an appointment</button>
                                 </div>
-                                <small class="text-muted">9 mins</small>
                             </div>
                         </div>
                     </div>
@@ -235,9 +237,7 @@
         <p class="float-right">
             <a href="#">Back to top</a>
         </p>
-        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-        <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting
-            started guide</a>.</p>
+        <p class="footer">2018 &copy; Terp Tutors. All rights reserved</p>
     </div>
 </footer>
 
