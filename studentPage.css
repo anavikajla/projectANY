@@ -60,3 +60,8 @@ img.card-img-top {
     background: #4CAF50;
     cursor: pointer;
 }
+
+img.logo {
+    height: 70px;
+    width: 70px;
+}
