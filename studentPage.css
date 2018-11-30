@@ -18,7 +18,7 @@ img.card-img-top {
     /*transition: all 400ms ease;*/
 }
 .navbar ul li a:hover {
-    color: #ffc107;
+    color: #FCEE21;
     font-weight: bold;
     /*-webkit-transition: all 400ms ease;*/
     /*-moz-transition: all 400ms ease;*/
@@ -33,7 +33,7 @@ img.logo {
 }
 
 a#studentPage{
-    color: #ffc107;
+    color: #FCEE21;
     font-weight: bold;
 }
 
