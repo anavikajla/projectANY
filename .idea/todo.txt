@@ -1,0 +1,6 @@
+available time and time split view on student page
+fix dropdown on nav
+logo text
+jquery plugin / timings drop down
+
+
