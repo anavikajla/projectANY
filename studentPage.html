@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="studentPage.css">
 
     <title>Student Page</title>
@@ -74,13 +75,13 @@
                     <div class="row">
                         <label class="col-form-label col-sm-2 pt-0 ml-5">Preferred Gender</label>
                         <div class="col-sm-7">
-                            <div class="form-check">
+                            <div class="form-check d-inline">
                                 <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
                                 <label class="form-check-label" for="gridRadios1">
                                     Male
                                 </label>
                             </div>
-                            <div class="form-check">
+                            <div class="form-check d-inline ml-3">
                                 <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
                                 <label class="form-check-label" for="gridRadios2">
                                     Female
@@ -115,11 +116,30 @@
                         <img class="card-img-top thumbnail"
                              src="pictures/student pic/pic1.jpeg"
                              alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">User Name</p>
-                            <p class="card-text">Subject</p>
-                            <p class="card-text">Gender</p>
-                            <p class="card-text">Price</p>
+                        <div class="card-body" id="card">
+                            <p class="card-text"><b>User Name:</b> Kattie023 <i class="fas fa-venus"></i></p>
+                            <p class="card-text"><b>Subject:</b> Geography</p>
+                            <p class="card-text"><b>Price:</b> $7 per hour</p>
+                            <p class="card-text"><b>Available Time:</b> Mon:9am-12pm, Wed:1pm-5pm</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group ml-5">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Book an appointment <i class="fas fa-exclamation-circle"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="card-img-top thumbnail"
+                             src="pictures/blank_female.svg"
+                             alt="Card image cap">
+                        <div class="card-body" id="card">
+                            <p class="card-text"><b>User Name:</b> Mini@1 <i class="fas fa-venus"></i></p>
+                            <p class="card-text"><b>Subject:</b> English</p>
+                            <p class="card-text"><b>Price:</b> Free</p>
+                            <p class="card-text"><b>Available Time:</b> Tue:4pm-6pm, Thu:3pm-4:30pm</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group ml-5">
                                     <button type="button" class="btn btn-sm btn-outline-secondary">Book an appointment</button>
@@ -135,29 +155,10 @@
                              src="pictures/blank_female.svg"
                              alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">User Name</p>
-                            <p class="card-text">Subject</p>
-                            <p class="card-text">Gender</p>
-                            <p class="card-text">Price</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group ml-5">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Book an appointment</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img class="card-img-top thumbnail"
-                             src="pictures/blank_female.svg"
-                             alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">User Name</p>
-                            <p class="card-text">Subject</p>
-                            <p class="card-text">Gender</p>
-                            <p class="card-text">Price</p>
+                            <p class="card-text"><b>User Name:</b> Lindleypretty <i class="fas fa-venus"></i></p>
+                            <p class="card-text"><b>Subject:</b> Java Script</p>
+                            <p class="card-text"><b>Price:</b> Free</p>
+                            <p class="card-text"><b>Available Time:</b> Fri:11am-3pm, Sat:5pm:8pm</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group ml-5">
                                     <button type="button" class="btn btn-sm btn-outline-secondary">Book an appointment</button>
@@ -173,10 +174,10 @@
                              src="pictures/blank_male.svg"
                              alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">User Name</p>
-                            <p class="card-text">Subject</p>
-                            <p class="card-text">Gender</p>
-                            <p class="card-text">Price</p>
+                            <p class="card-text"><b>User Name:</b> chefcurry30 <i class="fas fa-mars"></i></p>
+                            <p class="card-text"><b>Subject:</b> Photoshop</p>
+                            <p class="card-text"><b>Price:</b> Free</p>
+                            <p class="card-text"><b>Available Time:</b> Wed:2pm-8pm, Thu:3pm-5:30pm</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group ml-5">
                                     <button type="button" class="btn btn-sm btn-outline-secondary">Book an appointment</button>
@@ -192,10 +193,10 @@
                              src="pictures/student pic/pic2.jpeg"
                              alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">User Name</p>
-                            <p class="card-text">Subject</p>
-                            <p class="card-text">Gender</p>
-                            <p class="card-text">Price</p>
+                            <p class="card-text"><b>User Name:</b> csmith782 <i class="fas fa-venus"></i></p>
+                            <p class="card-text"><b>Subject:</b> Photography Model</p>
+                            <p class="card-text"><b>Price:</b> Lunch</p>
+                            <p class="card-text"><b>Available Time:</b> Mon:12pm-5pm, Wed:10am-1pm</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group ml-5">
                                     <button type="button" class="btn btn-sm btn-outline-secondary">Book an appointment</button>
@@ -211,7 +212,7 @@
                              src="pictures/student pic/pic3.jpeg"
                              alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">User Name</p>
+                            <p class="card-text">User Name: magicmike</p>
                             <p class="card-text">Subject</p>
                             <p class="card-text">Gender</p>
                             <p class="card-text">Price</p>
