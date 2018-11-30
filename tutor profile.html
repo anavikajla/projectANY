@@ -2,67 +2,69 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Student profile</title>
+    <title> Tutor's profile</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="tutor profile.css">
+
+    <link rel="stylesheet" type="text/css" href="student profile.css">
 
 </head>
 <body>
 
-<div class="container ">
-    <div class="container mt-4">
-        <header class="header">
-            <div class="header_content d-flex flex-row align-items-center justify-content-center">
-                <div class="logo"><a href="#">Terp Tutor</a></div>
-                <div class="log_reg">
-                    <ul class="d-flex flex-row align-items-start justify-content-start">
-                        <li><a href="#">Login</a></li>
-                        <li><a href="#">Register</a></li>
-                    </ul>
+
+
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#"><img class="logo" src="pictures/terpTutorsLogo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse w-100 order-3 dual-collapse2" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Find Tutor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="studentPage" href="#">Find Student</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Jessica
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">My Appointments</a>
+                    <a class="dropdown-item" href="#">Account Setting</a>
+                    <a class="dropdown-item" href="#">Sign Out</a>
                 </div>
-                <nav class="main_nav">
-                    <ul class="d-flex flex-row align-items-start justify-content-start">
-
-                        <li><a href="about.html">Home</a></li>
-                        <li><a href="music.html">Find Tutor</a></li>
-                        <li><a href="blog.html">Find Student</a></li>
-
-                    </ul>
-                </nav>
-                <div class="hamburger ml-auto">
-                    <div class="d-flex flex-column align-items-end justify-content-between">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
+            </li>
+        </ul>
     </div>
+</nav>
+
+<div class="container ">
     <div>
         <br>
 
         <link href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet">
         <div class="col-md-8 order-md-1">
-            <h4 class="mb-3">Tutor Profile</h4>
+            <h4 class="mb-3">Tutor's Profile</h4>
             <form class="needs-validation" novalidate>
 
                 <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <img src="pictures/blank_female.svg" width="350px" border-radius="50%">
-                        </div>
-                </div>
-
-                <div class="row">
                     <div class="col-md-6 mb-3">
-                        <label for="photo">upload/revise image</label>
+                        <img src="pictures/blank_female.svg" width="250px" border-radius="50%">
                     </div>
                 </div>
 
-
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Upload/Revise image</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                </form>
 
                 <div class="row">
                     <div class="col-md-6 mb-3">
@@ -96,27 +98,27 @@
                 </div>
 
                 <div class="row">
-                <div class="col-md-6 mb-3">
-                    <label for="male">Gender</label>
-                    <div class="d-block my-3">
-                        <div class="custom-control custom-radio">
-                            <input id="male" name="paymentMethod" type="radio" class="custom-control-input" checked required>
-                            <label class="custom-control-label" for="male">Male</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input id="female" name="paymentMethod" type="radio" class="custom-control-input" required>
-                            <label class="custom-control-label" for="female">Female</label>
+                    <div class="col-md-6 mb-3">
+                        <label for="male">Gender</label>
+                        <div class="d-block my-3">
+                            <div class="custom-control custom-radio d-inline">
+                                <input id="male" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                                <label class="custom-control-label" for="male">Male</label>
+                            </div>
+                            <div class="custom-control custom-radio d-inline">
+                                <input id="female" name="paymentMethod" type="radio" class="custom-control-input" required>
+                                <label class="custom-control-label" for="female">Female</label>
+                            </div>
                         </div>
                     </div>
                 </div>
-                </div>
 
                 <div class="row">
-                <div class="col-md-6 mb-3">
-                    <label for="dateBirth">Date of Birth</label>
-                    <input type="text" class="form-control" id="dateBirth" placeholder="mm/dd/yyyy" value="" required>
+                    <div class="col-md-6 mb-3">
+                        <label for="dateBirth">Date of Birth</label>
+                        <input type="text" class="form-control" id="dateBirth" placeholder="mm/dd/yyyy" value="" required>
 
-                </div>
+                    </div>
                 </div>
 
                 <div class="mb-3">
@@ -128,28 +130,28 @@
                 </div>
 
                 <div class="row">
-                <div class="col-md-6 mb-3">
-                    <label for="phone">Phone<span class="text-muted">(Optional)</span></label>
-                    <input type="text" class="form-control" id="phone" placeholder="" value="" required>
-                </div>
-                </div>
-
-                <div class="row">
-                <div class="col-md-6 mb-3">
-                    <label for="education">Education</label>
-                    <select class="form-control" id="education">
-                        <option>undergraduate</option>
-                        <option>graduate</option>
-                        <option>phd</option>
-                    </select>
-                </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="phone">Phone<span class="text-muted">(Optional)</span></label>
+                        <input type="text" class="form-control" id="phone" placeholder="" value="" required>
+                    </div>
                 </div>
 
                 <div class="row">
-                <div class="col-md-6 mb-3">
-                <label for="major">Major</label>
-                <input type="text" class="form-control" id="major" placeholder="" value="" required>
-                </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="education">Education</label>
+                        <select class="form-control" id="education">
+                            <option>undergraduate</option>
+                            <option>graduate</option>
+                            <option>phd</option>
+                        </select>
+
+                    </div>
+
+
+                    <div class="col-md-6 mb-3">
+                        <label for="major">Major</label>
+                        <input type="text" class="form-control" id="major" placeholder="" value="" required>
+                    </div>
                 </div>
 
                 <div class="mb-3">
@@ -209,17 +211,9 @@
                     </div>
                 </div>
 
-
                 <div class="row">
                     <div class="col-md-6 mb-3">
-                        <label for="subject">Work Experience</label>
-                        <input type="text" class="form-control" id="subject" placeholder="" value="" required>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="subject">Areas of Expertise</label>
+                        <label for="subject">Subject</label>
                         <input type="text" class="form-control" id="subject" placeholder="" value="" required>
                     </div>
                 </div>
@@ -240,5 +234,19 @@
         </ul>
     </footer>
 </div>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 </html>
