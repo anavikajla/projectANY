@@ -7,7 +7,8 @@
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="appointments.css">
-    <script src="appointments.js"></script>
+
+
 </head>
 <body>
 
@@ -41,67 +42,127 @@
     </div>
 </nav>
 
-    <!-- Content here -->
-    <div class="=container m-4">
-        <table class="table table-bordered table-dark table-hover">
-            <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col" class="text-warning">Student Name</th>
-                <th scope="col" class="text-warning">Time</th>
-                <th scope="col">Subject</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Natalie</td>
-                <td>1:30 PM<br/>
-                    Tuesday, 6th November 2018
-                </td>
-                <td>ECO317</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Yirang Choe</td>
-                <td>3:30 PM<br/>
-                    Tuesday, 6th November 2018
-                </td>
-                <td>CS101</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Mahitha Kalyani</td>
-                <td>10:30 PM<br/>
-                    Tuesday, 6th November 2018
-                </td>
-                <td>CS476</td>
-            </tr>
+     <!--Content here-->
+    <!--<div class="=container m-4">-->
 
-            <tr>
-                <th scope="row">2</th>
-                <td>Michael Scott</td>
-                <td>2:30 PM<br/>
-                    Tuesday, 6th November 2018
-                </td>
-                <td>BS918</td>
-            </tr>
+            <!--<h3>Section 1</h3>-->
 
-            </tbody>
-        </table>
-    </div>
+        <!--<table class="table table-bordered table-dark table-hover">-->
+            <!--<thead>-->
+            <!--<tr>-->
+                <!--<th scope="col">#</th>-->
+                <!--<th scope="col" class="text-warning">Student Name</th>-->
+                <!--<th scope="col" class="text-warning">Time</th>-->
+                <!--<th scope="col">Subject</th>-->
+            <!--</tr>-->
+            <!--</thead>-->
+
+
+            <!--<tbody>-->
+
+            <!--<tr class="view">-->
+                <!--<th scope="row">1</th>-->
+                <!--<td>Natalie</td>-->
+                <!--<td>1:30 PM<br/>-->
+                    <!--Tuesday, 6th November 2018-->
+                <!--</td>-->
+                <!--<td>ECO317</td>-->
+            <!--</tr>-->
+
+                <!--<tr class="fold">-->
+                    <!--<td colspan="7">-->
+                        <!--<div class="fold-content">-->
+                            <!--<h6>Tutor Name: Tom</h6>-->
+                            <!--<p>Please meet at Hornbake 0215C.</p>-->
+                        <!--</div>-->
+                    <!--</td>-->
+                <!--</tr>-->
+
+            <!--<tr>-->
+                <!--<th scope="row">2</th>-->
+                <!--<td>Yirang Choe</td>-->
+                <!--<td>3:30 PM<br/>-->
+                    <!--Tuesday, 6th November 2018-->
+                <!--</td>-->
+                <!--<td>CS101</td>-->
+            <!--</tr>-->
+
+            <!--<tr>-->
+                <!--<th scope="row">2</th>-->
+                <!--<td>Mahitha Kalyani</td>-->
+                <!--<td>10:30 PM<br/>-->
+                    <!--Tuesday, 6th November 2018-->
+                <!--</td>-->
+                <!--<td>CS476</td>-->
+            <!--</tr>-->
+
+            <!--<tr>-->
+                <!--<th scope="row">2</th>-->
+                <!--<td>Michael Scott</td>-->
+                <!--<td>2:30 PM<br/>-->
+                    <!--Tuesday, 6th November 2018-->
+                <!--</td>-->
+                <!--<td>BS918</td>-->
+            <!--</tr>-->
+
+            <!--</tbody>-->
+        <!--</table>-->
+    <!--</div>-->
+
+
+
+
+<div class="container">
+    <table class="table table-condensed"  id="myTable">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Student Name</th>
+            <th>Time</th>
+            <th>Subject</th>
+            <th>Debit</th>
+            <th>Balance</th>
+        </tr>
+        </thead>
+        <tbody class="panel">
+        <tr data-toggle="collapse" data-target="#demo1" data-parent="#myTable">
+            <td>1</td>
+            <td>05 May 2013</td>
+            <td>Credit Account</td>
+            <td class="text-success">$150.00</td>
+            <td class="text-error"></td>
+            <td class="text-success">$150.00</td>
+        </tr>
+        <tr id="demo1" class="collapse">
+            <td colspan="6" class="hiddenRow"><div>Demo1</div> </td>
+        </tr>
+        <tr data-toggle="collapse" data-target="#demo2" data-parent="#myTable">
+            <td>2</td>
+            <td>05 May 2013</td>
+            <td>Credit Account</td>
+            <td class="text-success">$11.00</td>
+            <td class="text-error"></td>
+            <td class="text-success">$161.00</td>
+        </tr>
+        <tr id="demo2" class="collapse">
+            <td colspan="6" class="hiddenRow"><div>Demo2</div></td>
+        </tr>
+        <tr data-toggle="collapse" data-target="#demo3" data-parent="#myTable">
+            <td>3</td>
+            <td>05 May 2013</td>
+            <td>Credit Account</td>
+            <td class="text-success">$500.00</td>
+            <td class="text-error"></td>
+            <td class="text-success">$661.00</td>
+        </tr>
+        <tr id="demo3" class="collapse">
+            <td colspan="6" class="hiddenRow"><div>Demo3</div></td>
+        </tr>
+        </tbody>
+    </table>
 </div>
 
-<span id="show" class="" style="text-decoration: underline">
-   <a href="#" class="fill-div" style="width: 100px;">
-     Show details
-    </a>
- </span>
-<div id="info" style="display:none; margin-left:2em">
-    <i>
-        Details shown here
-    </i>
-</div>
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -112,6 +173,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+<script src="appointments.js"></script>
+
 </body>
 
 </html>
