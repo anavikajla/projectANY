@@ -8,6 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="appointments.css">
     <script src="appointments.js"></script>
+    <script>
+        $( function() {
+            $( "#accordion" ).accordion();
+        } );
+    </script>
 </head>
 <body>
 
@@ -42,7 +47,7 @@
 </nav>
 
     <!-- Content here -->
-    <div class="=container m-4">
+    <div class="=container m-4" id="accordion">
         <table class="table table-bordered table-dark table-hover">
             <thead>
             <tr>
@@ -90,17 +95,6 @@
             </tbody>
         </table>
     </div>
-</div>
-
-<span id="show" class="" style="text-decoration: underline">
-   <a href="#" class="fill-div" style="width: 100px;">
-     Show details
-    </a>
- </span>
-<div id="info" style="display:none; margin-left:2em">
-    <i>
-        Details shown here
-    </i>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
