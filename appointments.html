@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="appointments.css">
     <script src="appointments.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
         $( function() {
             $( "#accordion" ).accordion();
@@ -58,13 +60,13 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
+            <tr  class="accordion-toggle" data-target="#demo1" data-toggle="collapse">
                 <th scope="row">1</th>
                 <td>Natalie</td>
                 <td>1:30 PM<br/>
                     Tuesday, 6th November 2018
                 </td>
-                <td>ECO317</td>
+                <td class="hiddenRow"><div class="accordion-body-collapse" id="#demo1">ECO317</div></td>
             </tr>
             <tr>
                 <th scope="row">2</th>
