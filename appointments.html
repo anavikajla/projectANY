@@ -8,13 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="appointments.css">
     <script src="appointments.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
         $( function() {
             $( "#accordion" ).accordion();
         } );
-    </script>
+    </script>-->
 </head>
 <body>
 
@@ -48,7 +48,7 @@
     </div>
 </nav>
 
-    <div class="=container m-4" id="accordion">
+<!--    <div class="=container m-4" id="accordion">
         <table class="table table-bordered table-dark table-hover">
             <thead>
             <tr>
@@ -96,6 +96,56 @@
             </tbody>
         </table>
     </div>
+</div>-->
+
+<div class="container">
+    <table class="table table-condensed"  id="myTable">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Credit</th>
+            <th>Debit</th>
+            <th>Balance</th>
+        </tr>
+        </thead>
+        <tbody class="panel">
+        <tr data-toggle="collapse" data-target="#demo1" data-parent="#myTable">
+            <td>1</td>
+            <td>05 May 2013</td>
+            <td>Credit Account</td>
+            <td class="text-success">$150.00</td>
+            <td class="text-error"></td>
+            <td class="text-success">$150.00</td>
+        </tr>
+        <tr id="demo1" class="collapse">
+            <td colspan="6" class="hiddenRow"><div>Demo1</div> </td>
+        </tr>
+        <tr data-toggle="collapse" data-target="#demo2" data-parent="#myTable">
+            <td>2</td>
+            <td>05 May 2013</td>
+            <td>Credit Account</td>
+            <td class="text-success">$11.00</td>
+            <td class="text-error"></td>
+            <td class="text-success">$161.00</td>
+        </tr>
+        <tr id="demo2" class="collapse">
+            <td colspan="6" class="hiddenRow"><div>Demo2</div></td>
+        </tr>
+        <tr data-toggle="collapse" data-target="#demo3" data-parent="#myTable">
+            <td>3</td>
+            <td>05 May 2013</td>
+            <td>Credit Account</td>
+            <td class="text-success">$500.00</td>
+            <td class="text-error"></td>
+            <td class="text-success">$661.00</td>
+        </tr>
+        <tr id="demo3" class="collapse">
+            <td colspan="6" class="hiddenRow"><div>Demo3</div></td>
+        </tr>
+        </tbody>
+    </table>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
