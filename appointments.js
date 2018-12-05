@@ -5,6 +5,7 @@ var appointments = [
     { studentName: 'Mahitha Kalyani', time: '10:30 PM, Tuesday, 6th November 2018', subject: 'CS476'},
     { studentName: 'Michael Scott', time: '2:30 PM, Tuesday, 6th November 2018', subject: 'BS918'}];
 */
+/*
 
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -19,4 +20,4 @@ for (i = 0; i < acc.length; i++) {
             panel.style.display = "block";
         }
     });
-}
+}*/
