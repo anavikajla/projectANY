@@ -13,62 +13,62 @@
 <body>
 
 
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#"><img class="logo" src="pictures/terpTutorsLogo.png"></a>
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse w-100 order-3 dual-collapse2" id="navbarNavDropdown">
+         <ul class="navbar-nav ml-auto">
+             <li class="nav-item active">
+                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+             </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="tutorPage.html">Find Tutor</a>
+             </li>
+             <li class="nav-item">
+                 <a class="nav-link" id="studentPage" href="studentPage.html">Find Student</a>
+             </li>
+             <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Anavi
+                 </a>
+                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                     <a class="dropdown-item" href="appointments.html">My Appointments</a>
+                     <a class="dropdown-item" href="#">Account Setting</a>
+                     <a class="dropdown-item" href="sign_in.html">Sign Out</a>
+                 </div>
+             </li>
+         </ul>
+     </div>-->
+</nav>
 
-                <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="#"><img class="logo" src="pictures/terpTutorsLogo.png"></a>
-                   <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse w-100 order-3 dual-collapse2" id="navbarNavDropdown">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="tutorPage.html">Find Tutor</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="studentPage" href="studentPage.html">Find Student</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Anavi
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="appointments.html">My Appointments</a>
-                                    <a class="dropdown-item" href="#">Account Setting</a>
-                                    <a class="dropdown-item" href="sign_in.html">Sign Out</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>-->
-                </nav>
-
-<div class="container col-md-6">
+<div class="container">
     <div>
         <br>
         <link href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet">
         <div class="col-md-8 order-md-1">
-            <h4 class="mb-3 center">Create Account</h4>
+            <h4 class="mb-3">Create Account</h4>
             <form class="needs-validation" novalidate>
 
                 <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <img src="pictures/blank_male.svg" width="250px" border-radius="50%" class="center">
-                        </div>
+                    <div class="col-md-6 mb-3">
+                        <img src="pictures/blank_male.svg" width="250px" border-radius="50%" class="center">
+                    </div>
                 </div>
 
-                <form class="needs-validation" novalidate>
-                    <div class="form-group">
-                        <label for="exampleFormControlFile1">Upload/Revise image</label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                    </div>
-                </form>
+                <!--<form class="needs-validation" novalidate>-->
+                <!--<div class="form-group">-->
+                <!--<label for="exampleFormControlFile1">Upload/Revise image</label>-->
+                <!--<input type="file" class="form-control-file" id="exampleFormControlFile1">-->
+                <!--</div>-->
+                <!--</form>-->
 
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="firstName">First Name</label>
-                        <input type="text" class="form-control" id="firstName" placeholder="First Name" value="" required>
+                        <input type="text" class="form-control" id="firstName" placeholder="First Name" value=""
+                               required>
                         <div class="invalid-feedback">
                             Valid first name is required.
                         </div>
@@ -97,60 +97,63 @@
                 </div>
 
                 <div class="row">
-                <div class="col-md-6 mb-3">
-                    <label for="male">Gender</label>
-                    <div class="d-block my-3">
-                        <div class="custom-control custom-radio d-inline">
-                            <input id="male" name="paymentMethod" type="radio" class="custom-control-input" checked required>
-                            <label class="custom-control-label" for="male">Male</label>
-                        </div>
-                        <div class="custom-control custom-radio d-inline">
-                            <input id="female" name="paymentMethod" type="radio" class="custom-control-input" required>
-                            <label class="custom-control-label" for="female">Female</label>
+                    <div class="col-md-6 mb-3">
+                        <label for="male">Gender</label>
+                        <div class="d-block my-3">
+                            <div class="custom-control custom-radio d-inline">
+                                <input id="male" name="paymentMethod" type="radio" class="custom-control-input" checked
+                                       required>
+                                <label class="custom-control-label" for="male">Male</label>
+                            </div>
+                            <div class="custom-control custom-radio d-inline">
+                                <input id="female" name="paymentMethod" type="radio" class="custom-control-input"
+                                       required>
+                                <label class="custom-control-label" for="female">Female</label>
+                            </div>
                         </div>
                     </div>
                 </div>
-                </div>
 
                 <div class="row">
-                <div class="col-md-6 mb-3">
-                    <label for="dateBirth">Date of Birth</label>
-                    <input type="text" class="form-control" id="dateBirth" placeholder="mm/dd/yyyy" value="" required>
+                    <div class="col-md-6 mb-3">
+                        <label for="dateBirth">Date of Birth</label>
+                        <input type="text" class="form-control" id="dateBirth" placeholder="mm/dd/yyyy" value=""
+                               required>
 
-                </div>
+                    </div>
                 </div>
 
                 <div class="mb-3">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
                     <div class="invalid-feedback">
                         Please enter a valid email address for shipping updates.
                     </div>
                 </div>
 
                 <div class="row">
-                <div class="col-md-6 mb-3">
-                    <label for="phone">Phone<span class="text-muted">(Optional)</span></label>
-                    <input type="text" class="form-control" id="phone" placeholder="" value="" required>
-                </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="phone">Phone<span class="text-muted">(Optional)</span></label>
+                        <input type="text" class="form-control" id="phone" placeholder="" value="" required>
+                    </div>
                 </div>
 
                 <div class="row">
-                <div class="col-md-6 mb-3">
-                    <label for="education">Education</label>
-                    <select class="form-control" id="education">
-                        <option>undergraduate</option>
-                        <option>graduate</option>
-                        <option>phd</option>
-                    </select>
+                    <div class="col-md-6 mb-3">
+                        <label for="education">Education</label>
+                        <select class="form-control" id="education">
+                            <option>undergraduate</option>
+                            <option>graduate</option>
+                            <option>phd</option>
+                        </select>
 
-                </div>
+                    </div>
 
 
-                <div class="col-md-6 mb-3">
-                <label for="major">Major</label>
-                <input type="text" class="form-control" id="major" placeholder="" value="" required>
-                </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="major">Major</label>
+                        <input type="text" class="form-control" id="major" placeholder="" value="" required>
+                    </div>
                 </div>
 
                 <div class="mb-3">
@@ -202,101 +205,101 @@
 
 
                         <!--<table class="table table-striped">-->
-                            <!--<thead>-->
-                            <!--<tr>-->
-                                <!--<th scope="col"></th>-->
-                                <!--<th scope="col">Mon</th>-->
-                                <!--<th scope="col">Tue</th>-->
-                                <!--<th scope="col">Wed</th>-->
-                                <!--<th scope="col">Thu</th>-->
-                                <!--<th scope="col">Fri</th>-->
-                                <!--<th scope="col">Sat</th>-->
-                                <!--<th scope="col">Sun</th>-->
+                        <!--<thead>-->
+                        <!--<tr>-->
+                        <!--<th scope="col"></th>-->
+                        <!--<th scope="col">Mon</th>-->
+                        <!--<th scope="col">Tue</th>-->
+                        <!--<th scope="col">Wed</th>-->
+                        <!--<th scope="col">Thu</th>-->
+                        <!--<th scope="col">Fri</th>-->
+                        <!--<th scope="col">Sat</th>-->
+                        <!--<th scope="col">Sun</th>-->
 
-                            <!--</tr>-->
-                            <!--</thead>-->
-                            <!--<tbody>-->
-                            <!--<tr>-->
-                                <!--<th scope="row">9:00~10:00</th>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                            <!--</tr>-->
-                            <!--<tr>-->
-                                <!--<th scope="row">10:00~11:00</th>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                            <!--</tr>-->
-                            <!--<tr>-->
-                                <!--<th scope="row">11:00~12:00</th>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                            <!--</tr>-->
-                            <!--<tr>-->
-                                <!--<th scope="row">13:00~14:00</th>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                            <!--</tr>-->
-                            <!--<tr>-->
-                                <!--<th scope="row">14:00~15:00</th>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                            <!--</tr>-->
-                            <!--<tr>-->
-                                <!--<th scope="row">15:00~16:00</th>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                            <!--</tr>-->
-                            <!--<tr>-->
-                                <!--<th scope="row">16:00~17:00</th>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                            <!--</tr>-->
-                            <!--<tr>-->
-                                <!--<th scope="row">17:00~18:00</th>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                                <!--<td></td>-->
-                            <!--</tr>-->
-                            <!--</tbody>-->
+                        <!--</tr>-->
+                        <!--</thead>-->
+                        <!--<tbody>-->
+                        <!--<tr>-->
+                        <!--<th scope="row">9:00~10:00</th>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<th scope="row">10:00~11:00</th>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<th scope="row">11:00~12:00</th>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<th scope="row">13:00~14:00</th>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<th scope="row">14:00~15:00</th>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<th scope="row">15:00~16:00</th>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<th scope="row">16:00~17:00</th>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<th scope="row">17:00~18:00</th>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--</tbody>-->
                         <!--</table>-->
                     </div>
                 </div>
@@ -324,7 +327,10 @@
             <p class="footer">2018 &copy; Terp Tutors. All rights reserved</p>
         </div>
     </footer>
+    <script src="createAccount.js"></script>
 </div>
+
+
 
 
 <!-- Bootstrap core JavaScript
