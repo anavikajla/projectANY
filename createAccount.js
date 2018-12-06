@@ -247,7 +247,6 @@ for(country in countries ) {
     select.add( new Option(countries[country].name));
 }
 
-
 (function () {
     'use strict';
     window.addEventListener('load', function () {
@@ -263,7 +262,6 @@ for(country in countries ) {
         });
     }, false);
 })();
-
 /*
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="src/index.js"></script>
