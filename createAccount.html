@@ -16,7 +16,7 @@
 
                 <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand" href="#"><img class="logo" src="pictures/terpTutorsLogo.png"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                   <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse w-100 order-3 dual-collapse2" id="navbarNavDropdown">
@@ -41,13 +41,12 @@
                                 </div>
                             </li>
                         </ul>
-                    </div>
+                    </div>-->
                 </nav>
 
-<div class="container ">
+<div class="container">
     <div>
         <br>
-
         <link href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet">
         <div class="col-md-8 order-md-1">
             <h4 class="mb-3">Create Account</h4>
@@ -55,11 +54,11 @@
 
                 <div class="row">
                         <div class="col-md-6 mb-3">
-                            <img src="pictures/blank_male.svg" width="250px" border-radius="50%">
+                            <img src="pictures/blank_male.svg" width="250px" border-radius="50%" class="center">
                         </div>
                 </div>
 
-                <form>
+                <form class="needs-validation" novalidate>
                     <div class="form-group">
                         <label for="exampleFormControlFile1">Upload/Revise image</label>
                         <input type="file" class="form-control-file" id="exampleFormControlFile1">
@@ -68,15 +67,15 @@
 
                 <div class="row">
                     <div class="col-md-6 mb-3">
-                        <label for="firstName">First name</label>
-                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="First Name" value="" required>
                         <div class="invalid-feedback">
                             Valid first name is required.
                         </div>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="lastName">Last name</label>
-                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Last Name" value="" required>
                         <div class="invalid-feedback">
                             Valid last name is required.
                         </div>
@@ -199,7 +198,7 @@
 
                 <div class="row">
                     <div class="col-md-6 mb-3">
-                        <label for="prefertime">Preferred time for courses</label>
+                        <label for="time">Preferred time for courses</label>
 
 
                         <!--<table class="table table-striped">-->
@@ -331,6 +330,7 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
+<script src="student%20profile.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
