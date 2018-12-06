@@ -243,10 +243,7 @@ var countries = [
     {"name": "Zimbabwe", "code": "ZW"}
 ], select = document.getElementById( 'countries' );
 
-for(country in c ) {
-    select.add( new Option(c[country].name));
+for(country in countries ) {
+    select.add( new Option(countries[country].name));
 }
-
-var
-
 
