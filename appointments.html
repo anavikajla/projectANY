@@ -29,7 +29,7 @@
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="tutorPage" href="#">Find Tutor</a>
+                <a class="nav-link" id="tutorPage" href="tutorPage.html">Find Tutor</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="studentPage.html">Find Student</a>
@@ -48,66 +48,17 @@
     </div>
 </nav>
 
-<!--    <div class="=container m-4" id="accordion">
-        <table class="table table-bordered table-dark table-hover">
-            <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col" class="text-warning">Student Name</th>
-                <th scope="col" class="text-warning">Time</th>
-                <th scope="col">Subject</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr  class="accordion-toggle" data-target="#demo1" data-toggle="collapse">
-                <th scope="row">1</th>
-                <td>Natalie</td>
-                <td>1:30 PM<br/>
-                    Tuesday, 6th November 2018
-                </td>
-                <td class="hiddenRow"><div class="accordion-body-collapse" id="#demo1">ECO317</div></td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Yirang Choe</td>
-                <td>3:30 PM<br/>
-                    Tuesday, 6th November 2018
-                </td>
-                <td>CS101</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Mahitha Kalyani</td>
-                <td>10:30 PM<br/>
-                    Tuesday, 6th November 2018
-                </td>
-                <td>CS476</td>
-            </tr>
-
-            <tr>
-                <th scope="row">2</th>
-                <td>Michael Scott</td>
-                <td>2:30 PM<br/>
-                    Tuesday, 6th November 2018
-                </td>
-                <td>BS918</td>
-            </tr>
-
-            </tbody>
-        </table>
-    </div>
-</div>-->
 
 <div class="container">
     <table class="table table-condensed"  id="myTable">
 
         <tr class="head">
             <td>#</td>
-            <td>Student</td>
+            <td>Name</td>
             <td>Time</td>
             <td>Subject</td>
-            <td>Debit</td>
-            <td>Balance</td>
+            <td>Location</td>
+
         </tr>
 
 
@@ -116,39 +67,45 @@
             <td>Natalie Yeh</td>
             <td>19:00 Oct 15, 2018</td>
             <td>Photography</td>
-            <td class="text-error"></td>
-            <td class="text-success">$150.00</td>
+            <td>Stamp</td>
+
         </tr>
 
             <tr id="demo1" class="collapse">
-            <td colspan="6" class="hiddenRow"><div>Demo1</div> </td>
+            <td colspan="6" class="hiddenRow"><div>
+                <img src="pictures/map.png" width="250px" border-radius="50%">
+            </div> </td>
         </tr>
-        
+
         <tr data-toggle="collapse" data-target="#demo2" data-parent="#myTable">
             <td>2</td>
-            <td>05 May 2013</td>
-            <td>Credit Account</td>
-            <td class="text-success">$11.00</td>
-            <td class="text-error"></td>
-            <td class="text-success">$161.00</td>
+            <td>Yirang Choe</td>
+            <td>15:00 Nov 20, 2018 </td>
+            <td>Chinese</td>
+            <td>Hornbake North 0215B</td>
+
         </tr>
         <tr id="demo2" class="collapse">
             <td colspan="6" class="hiddenRow"><div>Demo2</div></td>
         </tr>
+
         <tr data-toggle="collapse" data-target="#demo3" data-parent="#myTable">
             <td>3</td>
-            <td>05 May 2013</td>
-            <td>Credit Account</td>
-            <td class="text-success">$500.00</td>
-            <td class="text-error"></td>
-            <td class="text-success">$661.00</td>
+            <td>Anavi Kajla</td>
+            <td>20:00 Oct 12, 2018</td>
+            <td>Badminton</td>
+            <td>Eppley</td>
+
         </tr>
         <tr id="demo3" class="collapse">
             <td colspan="6" class="hiddenRow"><div>Demo3</div></td>
         </tr>
 
     </table>
+
 </div>
+
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
