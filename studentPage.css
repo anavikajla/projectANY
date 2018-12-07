@@ -67,3 +67,11 @@ a#studentPage{
     font-family: -apple-system,Helvetica,sans-serif,Serif;
     color:#4B4B4B;
 }
+
+#menu {
+    color: black;
+}
+#menu:hover{
+    text-decoration: underline;
+    font-weight: normal;
+}

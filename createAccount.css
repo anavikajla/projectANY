@@ -85,11 +85,11 @@ a#navbarDropdownMenuLink{
 .schedule-rows td[data-disabled] { opacity: 0.55; }
 
 div.container{
-    align-content: center;
+    margin: 0 auto;
 }
 
 img.center {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 140px;
+    margin-right:140px;
 }
