@@ -93,3 +93,11 @@ img.center {
     margin-left: 140px;
     margin-right:140px;
 }
+
+#menu {
+    color: black;
+}
+#menu:hover{
+    text-decoration: underline;
+    font-weight: normal;
+}

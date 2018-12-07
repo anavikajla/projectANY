@@ -20,24 +20,22 @@
     </button>
     <div class="collapse navbar-collapse w-100 order-3 dual-collapse2" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="tutorPage" href="#">Find Tutor</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="studentPage.html">Find Student</a>
-            </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown Menu">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Anavi
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="appointments.html">My Appointment</a>
-                    <a class="dropdown-item" href="tutor%20profile.html">Account Setting</a>
-                    <a class="dropdown-item" href="sign_in.html">Sign Out</a>
+                    <a class="dropdown-item" id="menu" href="appointments.html">My Appointments</a>
+                    <a class="dropdown-item" id="menu" href="editAccount.html">Account Setting</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" id="menu" href="sign_in.html">Sign Out</a>
                 </div>
+            </li>
+            <li class="nav-item Menu">
+                <a class="nav-link" href="tutorPage.html">Find Tutor</a>
+            </li>
+            <li class="nav-item Menu">
+                <a class="nav-link" id="studentPage" href="#">Find Student</a>
             </li>
         </ul>
     </div>
@@ -94,10 +92,10 @@
                 </fieldset>
 
                 <div class="form-group row">
-                    <label for="customRange3" class="col-sm-2 col-form-label ml-5 ">Price per hour</label>
+                    <label for="customRange3" class="col-sm-2 col-form-label ml-5 ">Price per hour ($)</label>
                     <div class="col-sm-7">
                         <input type="range" class="custom-range" min="0" max="5" step="0.5" id="customRange3">
-                        <label>$0</label>
+                        <label>0</label>
                     </div>
                 </div>
 

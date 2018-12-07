@@ -63,3 +63,11 @@ img.logo {
 .footer {
     font-size: small;
 }
+
+#menu {
+    color: black;
+}
+#menu:hover{
+    text-decoration: underline;
+    font-weight: normal;
+}
