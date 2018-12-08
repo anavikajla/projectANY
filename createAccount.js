@@ -241,22 +241,34 @@ var countries = [
     {"name": "Yemen", "code": "YE"},
     {"name": "Zambia", "code": "ZM"},
     {"name": "Zimbabwe", "code": "ZW"}
-], select = document.getElementById('country');
+], select = document.getElementById( 'country' );
 
-for (country in countries) {
-    select.add(new Option(countries[country].name));
+for(country in countries ) {
+    select.add( new Option(countries[country].name));
 }
+/*
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="src/index.js"></script>
 
-var ddlCountry = document.getElementById("country");
-var ddlStates = document.getElementById("state");
+
+$("#weekly-schedule").dayScheduleSelector({
+});
+
+
+$("#weekly-schedule").data('artsy.dayScheduleSelector').deserialize({
+        '0': [['09:30', '11:00'], ['13:00', '16:30']]
+});
+*/
+
+var ddlCountry = document.getElementById('country');
+var ddlStates = document.getElementById('state');
+// console.log(selectedCountry);
 
 ddlCountry.onchange = function () {
-
     var selectedCountry = ddlCountry.options[ddlCountry.selectedIndex].value;
-    console.log(selectedCountry);
-    ddlStates.options.length = 0;
     if (selectedCountry == "United States") {
-        // ddlStates.disabled = false;
+
+
         var states = [
             {
                 "name": "Alabama",
@@ -496,16 +508,34 @@ ddlCountry.onchange = function () {
             }
         ], select = document.getElementById('state');
 
-        for (s in states) {
-            console.log(states[s].name);
+
+// if(select.innerText == "United States"){
+//
+// }
+        for (var s in states) {
             select.add(new Option(states[s].name));
         }
-    } else if(selectedCountry == "Choose...") {
-        // ddlStates.enable() = false;
-        // ddlStates.disabled = true;
-    }
-    else {
-        // ddlStates.disabled = false;
+    } else {
         ddlStates.add(new Option("Not in USA"));
     }
 }
+
+
+//--------upload image---------
+
+function readURL(input) {
+
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+            $('#img').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$("#imgInp").change(function() {
+    readURL(this);
+});
