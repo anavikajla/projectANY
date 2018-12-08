@@ -102,7 +102,24 @@ a#home {
 #menu {
     color: black;
 }
+#menu2 {
+    color: black;
+}
+#menu3 {
+    color:black;
+}
+
 #menu:hover{
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+#menu2:hover{
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+#menu3:hover{
     text-decoration: underline;
     font-weight: normal;
 }
