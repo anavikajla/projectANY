@@ -88,3 +88,12 @@ img.logo {
     text-decoration: underline;
     font-weight: normal;
 }
+
+#amount{
+    background-color: #e9ecef;
+}
+
+p{
+    margin:-15px;
+}
+
