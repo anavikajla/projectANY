@@ -519,9 +519,9 @@ ddlCountry.onchange = function () {
         ddlStates.add(new Option("Not in USA"));
     }
 }
-var btn = document.getElementById("btnCreateAccount").onclick(){
-    document.getElementById("account_form").submit();
-}
+// var btn = document.getElementById("btnCreateAccount").onclick(){
+//     document.getElementById("account_form").submit();
+// }
 
 //--------upload image---------
 
