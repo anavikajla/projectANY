@@ -509,3 +509,13 @@ ddlCountry.onchange = function () {
         ddlStates.add(new Option("Not in USA"));
     }
 }
+
+var txtFile = "/Users/anavikajla/WebstormProjects/projectANY/data/user.txt";
+var file = new File(txtFile);
+var str = "My string of text";
+
+file.open("w"); // open file with write access
+file.writeln("First line of text");
+file.writeln("Second line of text " + str);
+file.write(str);
+file.close();
