@@ -8,6 +8,7 @@ img.card-img-top {
     position: fixed;
     transition: top 0.6s;
     top: 0;
+    z-index: 9;
 }
 
 .navbar ul li a {
