@@ -98,3 +98,11 @@ a#home {
 .container{
     padding:7px;
 }
+
+#menu {
+    color: black;
+}
+#menu:hover{
+    text-decoration: underline;
+    font-weight: normal;
+}
