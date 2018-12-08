@@ -68,11 +68,27 @@ a#studentPage{
     color:#4B4B4B;
 }
 
-.menu {
+#menu {
     color: black;
 }
+#menu2 {
+    color: black;
+}
+#menu3 {
+    color:black;
+}
 
-.menu:hover{
+#menu:hover{
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+#menu2:hover{
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+#menu3:hover{
     text-decoration: underline;
     font-weight: normal;
 }
