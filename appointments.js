@@ -21,3 +21,31 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }*/
+
+
+function handleSubmitClick() {
+    alert("Sorry,you can't delete now.");
+};
+
+document.getElementById('del_btn').addEventListener('click', handleSubmitClick, false);
+
+
+
+
+function handleSubmitClick () {
+    window.alert('Submitting the form. OK to finalize.');
+}
+
+document.getElementById('del_btn').addEventListener('click', handleSubmitClick, false);
+
+/* Capture form element value(s) */
+(function () {
+    var form = document.getElementById('submit_name');
+    var elements = form.elements;
+    var elFirstName = elements.FirstName;
+
+    addEvent(form, 'submit', function (e) {
+        e.preventDefault(); // Stop the form from being sent
+        document.getElementById('submit_name').textContent = 'Hello, ' + elFirstName.value; // Replace form with message through DOM
+    });
+}());

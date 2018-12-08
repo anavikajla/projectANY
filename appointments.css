@@ -37,26 +37,6 @@ a#navbarDropdownMenuLink{
     font-weight: bold;
 }
 
-.padding-0{
-    padding-top: 30px;
-}
-
-.padding-1{
-    padding-bottom: 10px;
-}
-
-.padding-3{
-    padding-top: 10px;
-}
-
-#sub{
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.footer {
-    font-size: small;
-}
 
 
 
@@ -84,10 +64,6 @@ a#navbarDropdownMenuLink{
 .schedule-rows td[data-disabled] { opacity: 0.55; }
 
 
-a#home {
-    background-color: #000000;
-}
-
 
 .head{
     background-color: dimgrey;
@@ -99,10 +75,31 @@ a#home {
     padding:7px;
 }
 
-#menu {
+#menu1 {
     color: black;
 }
-#menu:hover{
+#menu2 {
+    color: black;
+}
+#menu3 {
+    color: black;
+}
+
+#menu1:hover{
     text-decoration: underline;
     font-weight: normal;
+}
+
+#menu2:hover{
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+#menu3:hover{
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+#anavi{
+    padding:0px;
 }
