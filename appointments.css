@@ -6,6 +6,7 @@ img.card-img-top {
     width: 100%;
     /*position: fixed;*/
     height: 80px;
+
 }
 .navbar ul li a {
 
@@ -106,3 +107,4 @@ a#home {
     text-decoration: underline;
     font-weight: normal;
 }
+
