@@ -90,7 +90,7 @@ a#navbarDropdownMenuLink{
 .schedule-rows td[data-disabled] { opacity: 0.55; }
 
 div.container{
-    margin: 0 auto;
+    margin-top: 80px;
 }
 
 img.center {
