@@ -49,3 +49,15 @@ window.onscroll = function() {
 //         document.getElementById('submit_name').textContent = 'Hello, ' + elFirstName.value; // Replace form with message through DOM
 //     });
 // }());
+
+
+//------text-disappear-------
+window.onload = function() {
+    window.setTimeout(fadeout, 3000); //8 seconds
+}
+
+function fadeout() {
+    document.getElementById('info').style.opacity = '0';
+    document.getElementById("info").style.marginBottom = "0";
+}
+
