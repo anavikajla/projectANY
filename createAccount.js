@@ -24,7 +24,62 @@ function onSignIn(googleUser) {
     onboardingDiv.style.display = "flex";
 }
 
-function createUser() {
+function makeApiCall() {
+    var params = {
+        // The ID of the spreadsheet to update.
+        spreadsheetId: '1aUzqy4V1YrDpOGW2ysivK1Ti8ivg9XZbTXkPuUJQW0s',  // TODO: Update placeholder value.
+
+        // The A1 notation of a range to search for a logical table of data.
+        // Values will be appended after the last row of the table.
+        range: 'Sheet1',  // TODO: Update placeholder value.
+
+        // How the input data should be interpreted.
+        valueInputOption: 'USER_ENTERED',  // TODO: Update placeholder value.
+
+        // How the input data should be inserted.
+        insertDataOption: 'INSERT_ROWS',  // TODO: Update placeholder value.
+    };
+
+    var valueRangeBody = {
+        // TODO: Add desired properties to the request body.
+    };
+
+    var request = gapi.client.sheets.spreadsheets.values.append(params, valueRangeBody);
+    request.then(function(response) {
+        // TODO: Change code below to process the `response` object:
+        console.log(response.result);
+    }, function(reason) {
+        console.error('error: ' + reason.result.error.message);
+    });
+}
+
+function initClient() {
+    var API_KEY = 'AIzaSyDUhYR7KHQPRkvS7rUJYpnwjzxGdA_jJb4';
+    var CLIENT_ID = '629976535368-0mrs4srv347tfffeigktd5c5ih7pqm51.apps.googleusercontent.com';
+    var SCOPE = "https://www.googleapis.com/auth/spreadsheets";
+
+    gapi.client.init({
+        'apiKey': API_KEY,
+        'clientId': CLIENT_ID,
+        'scope': SCOPE,
+        'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
+    }).then(function() {
+        gapi.auth2.getAuthInstance().isSignedIn.listen(updateSignInStatus);
+        updateSignInStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
+    });
+}
+
+function handleClientLoad() {
+    gapi.load('client:auth2', initClient);
+}
+
+function updateSignInStatus(isSignedIn) {
+    if (isSignedIn) {
+        makeApiCall();
+    }
+}
+
+/*function createUser() {
     var API_KEY = 'AIzaSyDUhYR7KHQPRkvS7rUJYpnwjzxGdA_jJb4';
     var CLIENT_ID = '629976535368-0mrs4srv347tfffeigktd5c5ih7pqm51.apps.googleusercontent.com';
     var SCOPE = "https://www.googleapis.com/auth/spreadsheets";
@@ -72,7 +127,7 @@ function createUser() {
         });
     })
 
-}
+}*/
 
 var countries = [
     {"name": "Afghanistan", "code": "AF"},
