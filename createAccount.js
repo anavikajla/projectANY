@@ -241,10 +241,10 @@ var countries = [
     {"name": "Yemen", "code": "YE"},
     {"name": "Zambia", "code": "ZM"},
     {"name": "Zimbabwe", "code": "ZW"}
-], select = document.getElementById( 'country' );
+], select = document.getElementById('country');
 
-for(country in countries ) {
-    select.add( new Option(countries[country].name));
+for (country in countries) {
+    select.add(new Option(countries[country].name));
 }
 
 var isSignedIn = false;
@@ -254,7 +254,7 @@ var id_token = ""
 function onSignIn(googleUser) {
     // Useful data for your client-side scripts:
     var profile = googleUser.getBasicProfile();
-    email = getEmail();
+    email = profile.getEmail();
 
     document.getElementById("firstName").value = profile.getGivenName();
     document.getElementById("lastName").value = profile.getFamilyName();
@@ -288,7 +288,7 @@ function createUser() {
         'clientId': CLIENT_ID,
         'scope': SCOPE,
         'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
-    }).then(function() {
+    }).then(function () {
         var params = {
             // The ID of the spreadsheet to update.
             spreadsheetId: '1aUzqy4V1YrDpOGW2ysivK1Ti8ivg9XZbTXkPuUJQW0s',  // TODO: Update placeholder value.
@@ -319,10 +319,10 @@ function createUser() {
         };
 
         var request = gapi.client.sheets.spreadsheets.values.append(params, valueRangeBody);
-        request.then(function(response) {
+        request.then(function (response) {
             // TODO: Change code below to process the `response` object:
             console.log(response.result);
-        }, function(reason) {
+        }, function (reason) {
             console.error('error: ' + reason.result.error.message);
         });
     })
@@ -588,13 +588,12 @@ ddlCountry.onchange = function () {
 }
 
 
-
 function readURL(input) {
 
     if (input.files && input.files[0]) {
         var reader = new FileReader();
 
-        reader.onload = function(e) {
+        reader.onload = function (e) {
             $('#img').attr('src', e.target.result);
         }
 
@@ -602,7 +601,7 @@ function readURL(input) {
     }
 }
 
-$("#imgInp").change(function() {
+$("#imgInp").change(function () {
     readURL(this);
 });
 
