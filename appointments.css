@@ -110,39 +110,48 @@ a#navbarDropdownMenuLink{
 }
 
 #del_btn{
-    background-color: khaki;
-    color: black;
+    background-color: cornflowerblue;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border: none;
 }
 #del_btn2{
-    background-color: khaki;
-    color: black;
+    background-color: cornflowerblue;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border: none;
 }
 #del_btn3{
-    background-color: khaki;
-    color: black;
+    background-color: cornflowerblue;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border: none;
 }
 
 #del_btn:hover {
-    background-color: #E7D119;
+    background-color: #4B81E8;
 }
 #del_btn2:hover {
-    background-color: #E7D119;
+    background-color: #4B81E8;
 }
 #del_btn3:hover {
-    background-color: #E7D119;
+    background-color: #4B81E8;
 }
 #del_btn:active {
-    background-color: #E7D119;
+    background-color: #4B81E8;
     transform: translateY(2px);
-    outline: #DFCB24;
+    outline: #4B81E8;
 }
 #del_btn2:active {
-    background-color: #E7D119;
+    background-color: #4B81E8;
     transform: translateY(2px);
-    outline: #DFCB24;
+    outline: #4B81E8;
 }
 #del_btn3:active {
-    background-color: #E7D119;
+    background-color: #4B81E8;
     transform: translateY(2px);
-    outline: #DFCB24;
+    outline: #4B81E8;
 }
