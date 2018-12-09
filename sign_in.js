@@ -1,4 +1,6 @@
 
+var isSignedIn = false;
+
 function onSignIn(googleUser) {
     // Useful data for your client-side scripts:
     var profile = googleUser.getBasicProfile();
@@ -15,6 +17,7 @@ function onSignIn(googleUser) {
 
     console.log("ID Token: " + id_token);
     // location.href = "https://anavikajla.github.io/projectANY/createAccount.html";
+    isSignedIn = true;
 }
 //document.getElementById("GoogleSignIn").onclick = function () {
 
