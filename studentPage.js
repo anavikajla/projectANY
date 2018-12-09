@@ -12,6 +12,8 @@ window.onscroll = function() {
 
 
 
+//choose dept
+
 var choose_dept = [
     {"name": "Accounting"},
     {"name": "Aerospace Engineering"},
