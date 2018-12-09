@@ -1,3 +1,79 @@
+var isSignedIn = false;
+var email = "";
+var id_token = ""
+
+function onSignIn(googleUser) {
+    var profile = googleUser.getBasicProfile();
+    email = profile.getEmail();
+
+    document.getElementById("firstName").value = profile.getGivenName();
+    document.getElementById("lastName").value = profile.getFamilyName();
+    document.getElementById("img").src = profile.getImageUrl();
+
+    console.log(googleUser.getBasicProfile);
+
+    // The ID token you need to pass to your backend:
+    id_token = googleUser.getAuthResponse().id_token;
+    console.log("ID Token: " + id_token);
+
+    var signInButton = document.getElementById("GoogleSignIn");
+    signInButton.style.display = "none";
+    var landingAreaDiv = document.getElementById("particles-js");
+    landingAreaDiv.style.display = "none";
+    var onboardingDiv = document.getElementById("onboarding");
+    onboardingDiv.style.display = "flex";
+}
+
+function createUser() {
+    var API_KEY = 'AIzaSyDUhYR7KHQPRkvS7rUJYpnwjzxGdA_jJb4';
+    var CLIENT_ID = '629976535368-0mrs4srv347tfffeigktd5c5ih7pqm51.apps.googleusercontent.com';
+    var SCOPE = "https://www.googleapis.com/auth/spreadsheets";
+
+    gapi.client.init({
+        'apiKey': API_KEY,
+        'clientId': CLIENT_ID,
+        'scope': SCOPE,
+        'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
+    }).then(function () {
+        var params = {
+            // The ID of the spreadsheet to update.
+            spreadsheetId: '1aUzqy4V1YrDpOGW2ysivK1Ti8ivg9XZbTXkPuUJQW0s',  // TODO: Update placeholder value.
+
+            // The A1 notation of a range to search for a logical table of data.
+            // Values will be appended after the last row of the table.
+            range: 'Sheet1',  // TODO: Update placeholder value.
+
+            // How the input data should be interpreted.
+            valueInputOption: 'USER_ENTERED',  // TODO: Update placeholder value.
+
+            // How the input data should be inserted.
+            insertDataOption: 'INSERT_ROWS',  // TODO: Update placeholder value.
+        };
+
+        var valueRangeBody = {
+            "majorDimension": "ROWS",
+            "range": "Sheet1",
+            "values": [
+                [
+                    document.getElementById("firstName").value,
+                    document.getElementById("lastName").value,
+                    email,
+                    document.getElementById("img").src,
+                    document.getElementById("username")
+                ]
+            ]
+        };
+
+        var request = gapi.client.sheets.spreadsheets.values.append(params, valueRangeBody);
+        request.then(function (response) {
+            console.log(response.result);
+        }, function (reason) {
+            console.error('error: ' + reason.result.error.message);
+        });
+    })
+
+}
+
 var countries = [
     {"name": "Afghanistan", "code": "AF"},
     {"name": "Åland Islands", "code": "AX"},
@@ -246,89 +322,6 @@ var countries = [
 for (country in countries) {
     select.add(new Option(countries[country].name));
 }
-
-var isSignedIn = false;
-var email = "";
-var id_token = ""
-
-function onSignIn(googleUser) {
-    // Useful data for your client-side scripts:
-    var profile = googleUser.getBasicProfile();
-    email = profile.getEmail();
-
-    document.getElementById("firstName").value = profile.getGivenName();
-    document.getElementById("lastName").value = profile.getFamilyName();
-    document.getElementById("img").src = profile.getImageUrl();
-    // document.getElementById("")
-
-    console.log(googleUser.getBasicProfile);
-
-    // The ID token you need to pass to your backend:
-    id_token = googleUser.getAuthResponse().id_token;
-    console.log("ID Token: " + id_token);
-
-    var signInButton = document.getElementById("GoogleSignIn");
-    signInButton.style.display = "none";
-    var landingAreaDiv = document.getElementById("particles-js");
-    landingAreaDiv.style.display = "none";
-    var onboardingDiv = document.getElementById("onboarding");
-    onboardingDiv.style.display = "flex";
-    // location.href = "https://anavikajla.github.io/projectANY/createAccount.html";
-    //isSignedIn = true;
-    //window.location.href = "createAccount.html"
-}
-
-function createUser() {
-    var API_KEY = 'AIzaSyDUhYR7KHQPRkvS7rUJYpnwjzxGdA_jJb4';
-    var CLIENT_ID = '629976535368-0mrs4srv347tfffeigktd5c5ih7pqm51.apps.googleusercontent.com';
-    var SCOPE = "https://www.googleapis.com/auth/spreadsheets";
-
-    gapi.client.init({
-        'apiKey': API_KEY,
-        'clientId': CLIENT_ID,
-        'scope': SCOPE,
-        'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
-    }).then(function () {
-        var params = {
-            // The ID of the spreadsheet to update.
-            spreadsheetId: '1aUzqy4V1YrDpOGW2ysivK1Ti8ivg9XZbTXkPuUJQW0s',  // TODO: Update placeholder value.
-
-            // The A1 notation of a range to search for a logical table of data.
-            // Values will be appended after the last row of the table.
-            range: 'Sheet1',  // TODO: Update placeholder value.
-
-            // How the input data should be interpreted.
-            valueInputOption: 'USER_ENTERED',  // TODO: Update placeholder value.
-
-            // How the input data should be inserted.
-            insertDataOption: 'INSERT_ROWS',  // TODO: Update placeholder value.
-        };
-
-        var valueRangeBody = {
-            "majorDimension": "ROWS",
-            "range": "Sheet1",
-            "values": [
-                [
-                    document.getElementById("firstName").value,
-                    document.getElementById("lastName").value,
-                    email,
-                    document.getElementById("img").src,
-                    document.getElementById("username")
-                ]
-            ]
-        };
-
-        var request = gapi.client.sheets.spreadsheets.values.append(params, valueRangeBody);
-        request.then(function (response) {
-            // TODO: Change code below to process the `response` object:
-            console.log(response.result);
-        }, function (reason) {
-            console.error('error: ' + reason.result.error.message);
-        });
-    })
-
-}
-
 
 var ddlCountry = document.getElementById('country');
 var ddlStates = document.getElementById('state');
