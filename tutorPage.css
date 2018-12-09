@@ -104,3 +104,8 @@ img.logo {
 #slider-range {
     padding-left: 10px;
 }
+
+a#tutorPage {
+    color: #FCEE21;
+    font-weight: bold;
+}
