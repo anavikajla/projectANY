@@ -293,9 +293,7 @@ function sendEmail(emailId) {
 
 
 
-//choose dept
-
-
+//-------choose dept------
 
 
 var choose_dept = [
@@ -352,11 +350,6 @@ var choose_dept = [
 for(department in choose_dept ) {
     select.add(new Option(choose_dept[department].name));
 }
-
-
-
-
-
 
 
 
@@ -649,4 +642,4 @@ function ViewSelectedTimeslots()
     strMessage = strMessage + 'Thu: ' + GetSelectedTimeslots('Thu') + '\n';
     strMessage = strMessage + 'Fri: ' + GetSelectedTimeslots('Fri');
     alert(strMessage);
-};
+}
