@@ -17,7 +17,8 @@ function onSignIn(googleUser) {
 
     console.log("ID Token: " + id_token);
     // location.href = "https://anavikajla.github.io/projectANY/createAccount.html";
-    isSignedIn = true;
+    //isSignedIn = true;
+    window.location.href = "createAccount.html"
 }
 //document.getElementById("GoogleSignIn").onclick = function () {
 
