@@ -109,3 +109,21 @@ a#tutorPage {
     color: #FCEE21;
     font-weight: bold;
 }
+
+.previous {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #000000;
+    color: white;
+    content-align: center;
+}
+
+.next {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #000000;
+    color: white;
+    content-align: center;
+}
