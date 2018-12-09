@@ -325,7 +325,7 @@ function createUser() {
         }, function(reason) {
             console.error('error: ' + reason.result.error.message);
         });
-    }
+    })
 
 }
 
