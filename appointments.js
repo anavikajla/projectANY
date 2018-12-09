@@ -1,5 +1,6 @@
 
 
+//pop up window for delete
 
 function handleSubmitClick() {
     window.alert("Sorry, you can't delete now. You can only delete 48 hours before the course starts");
@@ -22,8 +23,18 @@ function handleSubmitClick2() {
 
 document.getElementById('del_btn3').addEventListener('click', handleSubmitClick2, false);
 
+//--------scrolling navbar----------
 
-
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("scroll").style.top = "0";
+    } else {
+        document.getElementById("scroll").style.top = "-80px";
+    }
+    prevScrollpos = currentScrollPos;
+}
 
 
 //
