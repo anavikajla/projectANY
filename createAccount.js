@@ -246,6 +246,40 @@ var countries = [
 for(country in countries ) {
     select.add( new Option(countries[country].name));
 }
+
+var isSignedIn = false;
+
+function onSignIn(googleUser) {
+    // Useful data for your client-side scripts:
+    var profile = googleUser.getBasicProfile();
+
+    document.getElementById("firstName").textContent = profile.getGivenName();
+    document.getElementById("lastName").textContent = profile.getFamilyName();
+    document.getElementById("img").src = profile.getImageUrl();
+    document.getElementById("")
+
+    console.log(googleUser.getBasicProfile);
+    // console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+    // console.log('Full Name: ' + profile.getName());
+    // console.log('Given Name: ' + profile.getGivenName());
+    // console.log('Family Name: ' + profile.getFamilyName());
+    // console.log("Image URL: " + profile.getImageUrl());
+    // console.log("Email: " + profile.getEmail());
+
+    // The ID token you need to pass to your backend:
+    var id_token = googleUser.getAuthResponse().id_token;
+    console.log("ID Token: " + id_token);
+
+    var signInButton = document.getElementById("GoogleSignIn");
+    signInButton.style.display = "none";
+    var landingAreaDiv = document.getElementById("particles-js");
+    landingAreaDiv.style.display = "none";
+    var onboardingDiv = document.getElementById("onboarding");
+    onboardingDiv.style.display = "flex";
+    // location.href = "https://anavikajla.github.io/projectANY/createAccount.html";
+    //isSignedIn = true;
+    //window.location.href = "createAccount.html"
+}
 /*
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="src/index.js"></script>
