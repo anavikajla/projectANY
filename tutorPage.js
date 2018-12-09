@@ -131,7 +131,7 @@ var options = {
     shouldSort: true,
     tokenize: true,
     findAllMatches: true,
-    threshold: 0.6,
+    threshold: 1.0,
     location: 0,
     distance: 100,
     maxPatternLength: 32,
