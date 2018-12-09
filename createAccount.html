@@ -8,10 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" type="text/css" href="createAccount.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!--<link rel="stylesheet" href="https:/resources/demos/style.css">-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <meta name="google-signin-scope" content="profile email">
     <meta name="google-signin-client_id" content="629976535368-0mrs4srv347tfffeigktd5c5ih7pqm51.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <style>
+        #onboarding {
+            display: none;
+        }
+    </style>
 </head>
 <body>
 
@@ -20,7 +29,34 @@
     <a class="navbar-brand" href="#"><img class="logo" src="pictures/terpTutorsLogo.png" /></a>
 </nav>
 
-<div class="container">
+<div id="particles-js">
+    <div class="container">
+
+        <!--<form class="form-signin">-->
+        <div class="text-center mx-auto  panel shadow-md rounded">
+            <img class="mb-4" src="pictures/terpTutorsLogo.png">
+            <h1 class="h3 mb-3 font-weight-normal">Welcome to TerpTutors!</h1>
+            <p>Sign in </p>
+
+            <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" id="GoogleSignIn"></div>
+        </div>
+
+        <script>
+            // console.log(isSignedIn);
+            var btn = document.getElementById("GoogleSignIn");
+
+            // if(btn.innerText === "Signed In"){
+            //     window.location.replace("https://anavikajla.github.io/projectANY/createAccount.html");
+            // }
+        </script>
+
+
+        <!--</form>-->
+    </div>
+    </div>
+
+
+<div class="container" id="onboarding">
     <div>
         <br>
         <link href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -36,7 +72,7 @@
 
                 <div class="mb-5 ml-5 center-block text-center">
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-                <form id="form1" runat="server">
+                <form id="form1" >
                     <input type='file' id="imgInp" />
                 </form>
                 </div>
@@ -193,6 +229,7 @@
             </form>
         </div>
     </div>
+</div>
     <hr>
     <footer class="text-muted">
         <div class="container">
@@ -203,7 +240,7 @@
         </div>
     </footer>
     <script src="createAccount.js"></script>
-</div>
+
 
 <script>
     (function() {
@@ -231,9 +268,9 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"-->
+        <!--integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"-->
+        <!--crossorigin="anonymous"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
