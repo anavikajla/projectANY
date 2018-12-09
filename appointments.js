@@ -1,5 +1,6 @@
 
 
+//pop up window for delete
 
 function handleSubmitClick() {
     window.alert("Sorry, you can't delete now. You can only delete 48 hours before the course starts");
