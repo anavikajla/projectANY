@@ -27,7 +27,7 @@ function onSignIn(googleUser) {
 function makeApiCall() {
     var params = {
         // The ID of the spreadsheet to update.
-        spreadsheetId: '1aUzqy4V1YrDpOGW2ysivK1Ti8ivg9XZbTXkPuUJQW0s',  // TODO: Update placeholder value.
+        spreadsheetId: "1aUzqy4V1YrDpOGW2ysivK1Ti8ivg9XZbTXkPuUJQW0s",  // TODO: Update placeholder value.
 
         // The A1 notation of a range to search for a logical table of data.
         // Values will be appended after the last row of the table.
@@ -41,7 +41,17 @@ function makeApiCall() {
     };
 
     var valueRangeBody = {
-        // TODO: Add desired properties to the request body.
+        "majorDimension": "ROWS",
+        "range": "Sheet1",
+        "values": [
+            [
+                document.getElementById("firstName").value,
+                document.getElementById("lastName").value,
+                email,
+                document.getElementById("img").src,
+                document.getElementById("username")
+            ]
+        ]
     };
 
     var request = gapi.client.sheets.spreadsheets.values.append(params, valueRangeBody);
