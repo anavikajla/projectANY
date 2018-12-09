@@ -104,7 +104,7 @@ a#navbarDropdownMenuLink{
 }
 
 .table {
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 #del_btn{
@@ -156,4 +156,11 @@ a#navbarDropdownMenuLink{
 
 .tableClick {
     cursor: pointer;
+}
+
+.info {
+    margin-top: 75px;
+    padding: 4px 12px;
+    background-color: #e7f3fe;
+    border-left: 6px solid #2196F3;
 }
