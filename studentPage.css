@@ -123,6 +123,10 @@ a#studentPage{
     border-color:#ffffff;
 }
 
+.createButton{
+    padding-left: 800px;
+}
+
 
 /*timeslot*/
 
@@ -132,3 +136,4 @@ table.daysofweek  {border-collapse:collapse; border:hidden 0px #ffffff;}
 .timelabels td    {border-style:hidden; border-width:1px; width:35px; font-size:11px;}
 .timeslots td     {border:solid 1px #007bff; width:34px; font-size:12px; background-color:#ffffff;}
 .daysofweek td    {border-style:hidden; border-width:1px; font-size:13px; height:19px;}
+
