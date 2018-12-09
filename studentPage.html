@@ -139,10 +139,421 @@
                     </div>
                 </div>
             </form>
-
-
         </div>
     </section>
+
+
+
+
+    <div class="text-right">
+        <div class="col-sm-10">
+            <button type="button" class="btn btn-primary" id="create" data-toggle="modal" data-target=".bd-example-modal-lg">Create post</button>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Create your post</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-text"><b>User Name:</b> IDDDK157 <i class="fas fa-venus"></i></p>
+                    <p class="modal-text"><b>Subject:</b> Computer Science</p>
+                    <p class="modal-text"><b>Price:</b> Free</p>
+                    <p class="modal-text"><b>Available Time: </b> Please select from below time slot
+
+
+                        <!--timeslot-->
+                    <div id="main">
+                            <span style="font-size:14px;">
+                            </span>
+                        <div align="left" style="border-style:solid; border-width:0px; border-color:red; width:600px;">
+                            <table id="tblTimeLabels" class="timelabels">
+                                <tr>
+                                    <td align="center">
+                                        9:00
+                                    </td>
+                                    <td align="center">
+                                        9:30
+                                    </td>
+                                    <td align="center">
+                                        10:00
+                                    </td>
+                                    <td align="center">
+                                        10:30
+                                    </td>
+                                    <td align="center">
+                                        11:00
+                                    </td>
+                                    <td align="center">
+                                        11:30
+                                    </td>
+                                    <td align="center">
+                                        12:00
+                                    </td>
+                                    <td align="center">
+                                        12:30
+                                    </td>
+                                    <td align="center">
+                                        1:00
+                                    </td>
+                                    <td align="center">
+                                        1:30
+                                    </td>
+                                    <td align="center">
+                                        2:00
+                                    </td>
+                                    <td align="center">
+                                        2:30
+                                    </td>
+                                    <td align="center">
+                                        3:00
+                                    </td>
+                                    <td align="center">
+                                        3:30
+                                    </td>
+                                    <td align="center">
+                                        4:00
+                                    </td>
+                                    <td align="center">
+                                        4:30
+                                    </td>
+                                    <td align="center">
+                                        5:00
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0">
+                                <tr>
+                                    <td valign="top">
+
+                                        <table id="tblDaysOfWeek" class="daysofweek">
+                                            <tr>
+                                                <td align="right">
+                                                    Monday
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="right">
+                                                    Tuesday
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="right">
+                                                    Wednesday
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="right">
+                                                    Thursday
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="right">
+                                                    Friday
+                                                </td>
+                                            <tr>
+                                        </table>
+
+                                    </td>
+                                    <td valign="top">
+
+                                        <table id="tblTimeSlotsMon" class="timeslots">
+                                            <tr>
+                                                <td id="tdMon1" name="tdMon1" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdMon2" name="tdMon2" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdMon3" name="tdMon3" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdMon4" name="tdMon4" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdMon5" name="tdMon5" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdMon6" name="tdMon6" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdMon7" name="tdMon7" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdMon8" name="tdMon8" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdMon9" name="tdMon9" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdMon10" name="tdMon10" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdMon11" name="tdMon11" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdMon12" name="tdMon12" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdMon13" name="tdMon13" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdMon14" name="tdMon14" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdMon15" name="tdMon15" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdMon16" name="tdMon16" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <table id="tblTimeSlotsTue" class="timeslots">
+                                            <tr>
+                                                <td id="tdTue1" name="tdTue1" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdTue2" name="tdTue2" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdTue3" name="tdTue3" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdTue4" name="tdTue4" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdTue5" name="tdTue5" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdTue6" name="tdTue6" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdTue7" name="tdTue7" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdTue8" name="tdTue8" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdTue9" name="tdTue9" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdTue10" name="tdTue10" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdTue11" name="tdTue11" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdTue12" name="tdTue12" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdTue13" name="tdTue13" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdTue14" name="tdTue14" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdTue15" name="tdTue15" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdTue16" name="tdTue16" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <table id="tblTimeSlotsWed" class="timeslots">
+                                            <tr>
+                                                <td id="tdWed1" name="tdWed1" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdWed2" name="tdWed2" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdWed3" name="tdWed3" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdWed4" name="tdWed4" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdWed5" name="tdWed5" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdWed6" name="tdWed6" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdWed7" name="tdWed7" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdWed8" name="tdWed8" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdWed9" name="tdWed9" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdWed10" name="tdWed10" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdWed11" name="tdWed11" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdWed12" name="tdWed12" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdWed13" name="tdWed13" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdWed14" name="tdWed14" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdWed15" name="tdWed15" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdWed16" name="tdWed16" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <table id="tblTimeSlotsThu" class="timeslots">
+                                            <tr>
+                                                <td id="tdThu1" name="tdThu1" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdThu2" name="tdThu2" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdThu3" name="tdThu3" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdThu4" name="tdThu4" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdThu5" name="tdThu5" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdThu6" name="tdThu6" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdThu7" name="tdThu7" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdThu8" name="tdThu8" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdThu9" name="tdThu9" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdThu10" name="tdThu10" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdThu11" name="tdThu11" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdThu12" name="tdThu12" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdThu13" name="tdThu13" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdThu14" name="tdThu14" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdThu15" name="tdThu15" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdThu16" name="tdThu16" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <table id="tblTimeSlotsFri" class="timeslots">
+                                            <tr>
+                                                <td id="tdFri1" name="tdFri1" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdFri2" name="tdFri2" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdFri3" name="tdFri3" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdFri4" name="tdFri4" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdFri5" name="tdFri5" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdFri6" name="tdFri6" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdFri7" name="tdFri7" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdFri8" name="tdFri8" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdFri9" name="tdFri9" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdFri10" name="tdFri10" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdFri11" name="tdFri11" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdFri12" name="tdFri12" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdFri13" name="tdFri13" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdFri14" name="tdFri14" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdFri15" name="tdFri15" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                                <td id="tdFri16" name="tdFri16" align="center" onClick="ToggleTimeslot(this);">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+                        <span style="font-size:12px;"><br/></span>
+                        <input type="submit" value=" View Selected Timeslots " onClick="ViewSelectedTimeslots();">
+                    </div>
+
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Create</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <div class="album bg-light padding-3">
         <div class="container">
