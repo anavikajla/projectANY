@@ -72,7 +72,8 @@ for(department in choose_dept ) {
 // timeslot---------
 
 
-var strColorOn = '#c6e7de';
+// var strColorOn = '#c6e7de';
+var strColorOn = '#007bff';
 var strColorOff = '#ffffff';
 
 function GetHexValue(strRGBColor)
