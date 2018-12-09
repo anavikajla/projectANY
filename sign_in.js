@@ -20,7 +20,3 @@ function onSignIn(googleUser) {
     //isSignedIn = true;
     window.location.href = "createAccount.html"
 }
-//document.getElementById("GoogleSignIn").onclick = function () {
-
-// };
-//

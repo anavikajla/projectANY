@@ -246,6 +246,9 @@ var countries = [
 for(country in countries ) {
     select.add( new Option(countries[country].name));
 }
+
+var profile = googleUser.getBasicProfile();
+console.log(profile)
 /*
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="src/index.js"></script>
