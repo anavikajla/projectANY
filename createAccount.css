@@ -95,20 +95,20 @@ img.center {
 }
 
 
-/*timeslot*/
+/*!*timeslot*!*/
 
-<style type="text/css">
-                      table.timelabels  {border-collapse:collapse; border:hidden 1px #ffffff; margin-left:57px;}
-table.timeslots   {border-collapse:collapse; border:solid 1px #006363;}
-table.daysofweek  {border-collapse:collapse; border:hidden 0px #ffffff;}
-.timelabels td    {border-style:hidden; border-width:1px; width:35px; font-size:11px;}
-.timeslots td     {border:solid 1px #006363; width:34px; font-size:12px; background-color:#ffffff;}
-.daysofweek td    {border-style:hidden; border-width:1px; font-size:12px; height:19px;}
-</style>
-                      table.timelabels  {border-collapse:collapse; border:hidden 1px #ffffff; margin-left:57px;}
-table.timeslots   {border-collapse:collapse; border:solid 1px #006363;}
-table.daysofweek  {border-collapse:collapse; border:hidden 0px #ffffff;}
-.timelabels td    {border-style:hidden; border-width:1px; width:35px; font-size:11px;}
-.timeslots td     {border:solid 1px #006363; width:34px; font-size:12px; background-color:#ffffff;}
-.daysofweek td    {border-style:hidden; border-width:1px; font-size:12px; height:19px;}
-</style>
+/*<style type="text/css">*/
+                      /*table.timelabels  {border-collapse:collapse; border:hidden 1px #ffffff; margin-left:57px;}*/
+/*table.timeslots   {border-collapse:collapse; border:solid 1px #006363;}*/
+/*table.daysofweek  {border-collapse:collapse; border:hidden 0px #ffffff;}*/
+/*.timelabels td    {border-style:hidden; border-width:1px; width:35px; font-size:11px;}*/
+/*.timeslots td     {border:solid 1px #006363; width:34px; font-size:12px; background-color:#ffffff;}*/
+/*.daysofweek td    {border-style:hidden; border-width:1px; font-size:12px; height:19px;}*/
+/*</style>*/
+                      /*table.timelabels  {border-collapse:collapse; border:hidden 1px #ffffff; margin-left:57px;}*/
+/*table.timeslots   {border-collapse:collapse; border:solid 1px #006363;}*/
+/*table.daysofweek  {border-collapse:collapse; border:hidden 0px #ffffff;}*/
+/*.timelabels td    {border-style:hidden; border-width:1px; width:35px; font-size:11px;}*/
+/*.timeslots td     {border:solid 1px #006363; width:34px; font-size:12px; background-color:#ffffff;}*/
+/*.daysofweek td    {border-style:hidden; border-width:1px; font-size:12px; height:19px;}*/
+/*</style>*/
