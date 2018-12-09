@@ -311,9 +311,9 @@ function createUser() {
                 [
                     document.getElementById("firstName").value,
                     document.getElementById("lastName").value,
-                    document.getElementById(email),
+                    email,
                     document.getElementById("img").src,
-                    document.getElementById("username"),
+                    document.getElementById("username")
                 ]
             ]
         };
