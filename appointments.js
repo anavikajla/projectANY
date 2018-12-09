@@ -3,14 +3,14 @@
 //pop up window for delete
 
 function handleSubmitClick() {
-    window.alert("Sorry, you can't delete now. You can only delete 48 hours before the course starts");
+    window.alert("Sorry, you can't cancel now. You can only cancel the appointment 48 hours prior to the tutoring starts");
 };
 
 document.getElementById('del_btn').addEventListener('click', handleSubmitClick, false);
 
 
 function handleSubmitClick2() {
-    window.alert(" Please confirm again you need to delete now.");
+    window.alert(" Please confirm again you need to cancel now.");
 };
 
 document.getElementById('del_btn2').addEventListener('click', handleSubmitClick2, false);
@@ -18,7 +18,7 @@ document.getElementById('del_btn2').addEventListener('click', handleSubmitClick2
 
 
 function handleSubmitClick2() {
-    window.alert(" Please confirm again you need to delete now.");
+    window.alert(" Please confirm again you need to cancel now.");
 };
 
 document.getElementById('del_btn3').addEventListener('click', handleSubmitClick2, false);
