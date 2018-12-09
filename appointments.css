@@ -108,3 +108,41 @@ a#navbarDropdownMenuLink{
 .table {
     margin-top: 80px;
 }
+
+#del_btn{
+    background-color: khaki;
+    color: black;
+}
+#del_btn2{
+    background-color: khaki;
+    color: black;
+}
+#del_btn3{
+    background-color: khaki;
+    color: black;
+}
+
+#del_btn:hover {
+    background-color: #E7D119;
+}
+#del_btn2:hover {
+    background-color: #E7D119;
+}
+#del_btn3:hover {
+    background-color: #E7D119;
+}
+#del_btn:active {
+    background-color: #E7D119;
+    transform: translateY(2px);
+    outline: #DFCB24;
+}
+#del_btn2:active {
+    background-color: #E7D119;
+    transform: translateY(2px);
+    outline: #DFCB24;
+}
+#del_btn3:active {
+    background-color: #E7D119;
+    transform: translateY(2px);
+    outline: #DFCB24;
+}
