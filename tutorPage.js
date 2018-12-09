@@ -1,5 +1,5 @@
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
+window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
         document.getElementById("scroll").style.top = "0";
@@ -9,41 +9,34 @@ window.onscroll = function() {
     prevScrollpos = currentScrollPos;
 }
 
-
-
-// for chooseing dept
-
 var choose_dept = [
     {"name": "Accounting"},
     {"name": "Aerospace Engineering"},
     {"name": "American Studies"},
     {"name": "Anthropology"},
-    {"name": "Applied Mathematics and Scientific Computation Program"},
     {"name": "Architecture"},
     {"name": "Art"},
     {"name": "Astronomy"},
     {"name": "Biochemistry"},
     {"name": "Bioengineering"},
-    {"name": "Biological Sciences Undergraduate Program"},
     {"name": "Biology"},
     {"name": "Business"},
-    {"name": "Chemical and Biomolecular Engineering"},
-    {"name": "Chemistry and Biochemistry"},
-    {"name": "Civil and Environmental Engineering"},
+    {"name": "Chemical Engineering"},
+    {"name": "Chemistry"},
+    {"name": "Civil Engineering"},
     {"name": "Communication"},
     {"name": "Computer Science"},
     {"name": "Economics"},
-    {"name": "Education, Curriculum and Instruction"},
+    {"name": "Education"},
     {"name": "Electrical and Computer Engineering"},
     {"name": "English Language and Literature"},
     {"name": "Film Studies"},
     {"name": "Finance"},
     {"name": "Geography"},
     {"name": "Geology"},
-    {"name": "Health Services Administration"},
     {"name": "History"},
-    {"name": "Human Computer Interaction"},
-    {"name": "Information science"},
+    {"name": "Human-Computer Interaction"},
+    {"name": "Information Science"},
     {"name": "Journalism"},
     {"name": "Landscape Architecture"},
     {"name": "Linguistics"},
@@ -54,17 +47,15 @@ var choose_dept = [
     {"name": "Philosophy"},
     {"name": "Physics"},
     {"name": "Psychology"},
-    {"name": "School of Languages, Literatures and Cultures"},
     {"name": "Sociology"},
-    {"name": "Networking and Telecommunications Services"},
     {"name": "Theatre"},
     {"name": "Urban Studies and Planning"},
     {"name": "Veterinary Medicine"},
     {"name": "Women's Studies"},
 
-], select = document.getElementById( 'department' );
+], select = document.getElementById('department');
 
-for(department in choose_dept ) {
+for (department in choose_dept) {
     select.add(new Option(choose_dept[department].name));
 }
 
@@ -74,56 +65,64 @@ var students = [
         "subject": "Physics",
         "price": "Free",
         "availability": "Mon:9am-12pm, Wed:1pm-5pm",
-        "src": "pictures/tutor pic/pic1.jpg"
+        "src": "pictures/tutor pic/pic1.jpg",
+        "email": "mark@mark.com"
     },
     {
         "username": "saraK157",
         "subject": "Computer Science",
         "price": "Free",
         "availability": "Mon:12pm-5pm, Wed:10am-1pm",
-        "src" :"pictures/tutor pic/pic2.jpeg"
+        "src": "pictures/tutor pic/pic2.jpeg",
+        "email": "sara@sara.com"
     },
     {
         "username": "jhk53",
         "subject": "Education",
         "price": "Free",
         "availability": "Mon:9am-12pm, Wed:1pm-5pm",
-        "src": "pictures/tutor pic/pic3.jpeg"
+        "src": "pictures/tutor pic/pic3.jpeg",
+        "email": "jhk@jhk.com"
     },
     {
         "username": "cory123",
         "subject": "HCI",
         "price": "Free",
         "availability": "Mon:9am-12pm, Wed:1pm-5pm",
-        "src":"pictures/blank_female.svg"
+        "src": "pictures/blank_female.svg",
+        "email": "cory@cory.com"
     },
     {
         "username": "jenny",
         "subject": "Physics",
         "price": "Free",
         "availability": "Mon:9am-12pm, Wed:1pm-5pm",
-        "src": "pictures/blank_female.svg"
+        "src": "pictures/blank_female.svg",
+        "email": "jenny@jenny.com"
     },
     {
         "username": "johnm",
         "subject": "Computer Science",
         "price": "Free",
         "availability": "Mon:12pm-5pm, Wed:10am-1pm",
-        "src" :"pictures/blank_male.svg"
+        "src": "pictures/blank_male.svg",
+        "email": "johnm@john.com"
     },
     {
-        "username": "jhk53",
+        "username": "fellow345",
         "subject": "Education",
         "price": "Free",
         "availability": "Mon:9am-12pm, Wed:1pm-5pm",
-        "src": "pictures/blank_female.svg"
+        "src": "pictures/blank_female.svg",
+        "email": "fellow@fellow.com"
     },
     {
-        "username": "cory123",
+        "username": "besttutor",
         "subject": "Physics",
         "price": "Free",
         "availability": "Mon:9am-12pm, Wed:1pm-5pm",
-        "src":"pictures/blank_female.svg"
+        "src": "pictures/blank_female.svg",
+        "email": "tutor@tutor.com"
     }
 ]
 
@@ -131,32 +130,49 @@ var options = {
     shouldSort: true,
     tokenize: true,
     findAllMatches: true,
-    threshold: 1.0,
+    threshold: 0.0,
     location: 0,
     distance: 100,
     maxPatternLength: 32,
     minMatchCharLength: 1,
     keys: [
-        "subject"
+        "subject",
+        "username",
+        "price",
+        "availability"
     ]
 };
 
-var search = document.getElementById("subject");
-search.onchange = function () {
-    $("#parentDiv").html('');
+populatePage(students);
 
-}
+// function noSearchQuery(){
+//     var search = document.getElementById("search");
+//     if(search.textContent == ""){
+//         populatePage(students);
+//     }
+// }
 
 function fuseSearch() {
 
-    var fuse = new Fuse(students, options); // "list" is the item array
-    var searchQuery = document.getElementById("subject");
+    var search = document.getElementById("search");
+    console.log(search.textContent);
+    if (search.textContent === "") {
+        populatePage(students);
+    }
+
+    var fuse = new Fuse(students, options);
+    var searchQuery = document.getElementById("search");
     var result = fuse.search(searchQuery.value);
-    console.log(result);
     var parentDiv = document.getElementById("parentDiv");
     parentDiv.innerHTML = '';
-    
-    for(r in result){
+    populatePage(result);
+}
+
+function populatePage(result) {
+    var parentDiv = document.getElementById("parentDiv");
+    parentDiv.innerHTML = '';
+
+    for (r in result) {
 
         var div1 = document.createElement("div");
         div1.classList += "col-md-4 ";
@@ -219,26 +235,26 @@ function fuseSearch() {
         $(button).attr("data-target", "#myModal");
         button.textContent = "Set Up Appointment";
         div5.appendChild(button);
-        
+
         var div6 = document.createElement("div");
         div6.classList += "modal fade";
         div6.id = "myModal";
         div6.tabIndex = 1;
         div6.role = "dialog";
         parentDiv.appendChild(div6);
-        
+
         var div7 = document.createElement("div");
         div7.classList += "modal-dialog";
         div6.appendChild(div7);
-        
+
         var div8 = document.createElement("div");
         div8.classList += "modal-content";
         div7.appendChild(div8);
-        
+
         var div9 = document.createElement("div");
         div9.classList += "modal-header";
         div8.appendChild(div9);
-        
+
         var modalTitle = document.createElement("h4");
         modalTitle.classList += "modal-title";
         modalTitle.id = "myModalLabel";
@@ -252,7 +268,7 @@ function fuseSearch() {
         var div11 = document.createElement("div");
         div11.classList += "modal-footer";
         div8.appendChild(div11);
-        
+
         var btnClose = document.createElement("button");
         btnClose.classList += "btn btn-default";
         btnClose.type = "button";
@@ -265,8 +281,14 @@ function fuseSearch() {
         btnSendEmail.classList += "btn btn-primary";
         btnSendEmail.type = "button";
         btnSendEmail.textContent = "Email";
+        // btnSendEmail.onclick = sendEmail(result[r].email);
         div11.appendChild(btnSendEmail);
     }
+
+}
+
+function sendEmail(emailId) {
+    window.location.href =  'mailto:' + emailId;
 }
 
 
