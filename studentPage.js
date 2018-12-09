@@ -66,13 +66,3 @@ for(department in choose_dept ) {
     select.add(new Option(choose_dept[department].name));
 }
 
-//
-//
-//     var countries = [
-//         {"name": "Afghanistan", "code": "AF"},
-//         {"name": "Åland Islands", "code": "AX"},
-// ], select = document.getElementById( 'country' );
-//
-//     for(country in countries ) {
-//         select.add( new Option(countries[country].name));
-//     }

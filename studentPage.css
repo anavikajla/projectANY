@@ -98,6 +98,15 @@ a#studentPage{
     font-weight: normal;
 }
 
+
+#amount{
+    background-color: #e9ecef;
+}
+
 .jumbotron-heading {
     margin-top: 80px;
+}
+
+#pricerange {
+
 }
