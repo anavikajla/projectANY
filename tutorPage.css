@@ -101,6 +101,10 @@ img.logo {
     margin-top: 80px;
 }
 
+.jumbotron{
+    margin-bottom:0px;
+}
+
 #slider-range {
     padding-left: 10px;
 }
@@ -132,11 +136,17 @@ a#tutorPage {
     margin:8px;
 }
 
+
+
 #create{
-    margin:20px;
+    margin:8px;
     background-color:#000000;
     color:#ffffff;
     border-color:#ffffff;
+}
+
+.createButton{
+    padding-left: 800px;
 }
 
 
@@ -146,5 +156,6 @@ table.timelabels  {border-collapse:collapse; border:hidden 1px #ffffff; margin-l
 table.timeslots   {border-collapse:collapse; border:solid 1px #000000;}
 table.daysofweek  {border-collapse:collapse; border:hidden 0px #ffffff;}
 .timelabels td    {border-style:hidden; border-width:1px; width:35px; font-size:11px;}
-.timeslots td     {border:solid 1px #3498DB; width:34px; font-size:12px; background-color:#ffffff;}
+.timeslots td     {border:solid 1px #007bff; width:34px; font-size:12px; background-color:#ffffff;}
 .daysofweek td    {border-style:hidden; border-width:1px; font-size:13px; height:19px;}
+
