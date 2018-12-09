@@ -248,10 +248,13 @@ for(country in countries ) {
 }
 
 var isSignedIn = false;
+var email = "";
+var id_token = ""
 
 function onSignIn(googleUser) {
     // Useful data for your client-side scripts:
     var profile = googleUser.getBasicProfile();
+    email = getEmail();
 
     document.getElementById("firstName").value = profile.getGivenName();
     document.getElementById("lastName").value = profile.getFamilyName();
@@ -259,15 +262,9 @@ function onSignIn(googleUser) {
     // document.getElementById("")
 
     console.log(googleUser.getBasicProfile);
-    // console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-    // console.log('Full Name: ' + profile.getName());
-    // console.log('Given Name: ' + profile.getGivenName());
-    // console.log('Family Name: ' + profile.getFamilyName());
-    // console.log("Image URL: " + profile.getImageUrl());
-    // console.log("Email: " + profile.getEmail());
 
     // The ID token you need to pass to your backend:
-    var id_token = googleUser.getAuthResponse().id_token;
+    id_token = googleUser.getAuthResponse().id_token;
     console.log("ID Token: " + id_token);
 
     var signInButton = document.getElementById("GoogleSignIn");
@@ -280,19 +277,58 @@ function onSignIn(googleUser) {
     //isSignedIn = true;
     //window.location.href = "createAccount.html"
 }
-/*
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="src/index.js"></script>
 
+function createUser() {
+    var API_KEY = 'AIzaSyDUhYR7KHQPRkvS7rUJYpnwjzxGdA_jJb4';
+    var CLIENT_ID = '629976535368-0mrs4srv347tfffeigktd5c5ih7pqm51.apps.googleusercontent.com';
+    var SCOPE = "https://www.googleapis.com/auth/spreadsheets";
 
-$("#weekly-schedule").dayScheduleSelector({
-});
+    gapi.client.init({
+        'apiKey': API_KEY,
+        'clientId': CLIENT_ID,
+        'scope': SCOPE,
+        'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
+    }).then(function() {
+        var params = {
+            // The ID of the spreadsheet to update.
+            spreadsheetId: '1aUzqy4V1YrDpOGW2ysivK1Ti8ivg9XZbTXkPuUJQW0s',  // TODO: Update placeholder value.
 
+            // The A1 notation of a range to search for a logical table of data.
+            // Values will be appended after the last row of the table.
+            range: 'Sheet1',  // TODO: Update placeholder value.
 
-$("#weekly-schedule").data('artsy.dayScheduleSelector').deserialize({
-        '0': [['09:30', '11:00'], ['13:00', '16:30']]
-});
-*/
+            // How the input data should be interpreted.
+            valueInputOption: 'USER_ENTERED',  // TODO: Update placeholder value.
+
+            // How the input data should be inserted.
+            insertDataOption: 'INSERT_ROWS',  // TODO: Update placeholder value.
+        };
+
+        var valueRangeBody = {
+            "majorDimension": "ROWS",
+            "range": "Sheet1",
+            "values": [
+                [
+                    document.getElementById("firstName").value,
+                    document.getElementById("lastName").value,
+                    document.getElementById(email),
+                    document.getElementById("img").src,
+                    document.getElementById("username"),
+                ]
+            ]
+        };
+
+        var request = gapi.client.sheets.spreadsheets.values.append(params, valueRangeBody);
+        request.then(function(response) {
+            // TODO: Change code below to process the `response` object:
+            console.log(response.result);
+        }, function(reason) {
+            console.error('error: ' + reason.result.error.message);
+        });
+    }
+
+}
+
 
 var ddlCountry = document.getElementById('country');
 var ddlStates = document.getElementById('state');
@@ -543,9 +579,6 @@ ddlCountry.onchange = function () {
         ], select = document.getElementById('state');
 
 
-// if(select.innerText == "United States"){
-//
-// }
         for (var s in states) {
             select.add(new Option(states[s].name));
         }
@@ -555,7 +588,6 @@ ddlCountry.onchange = function () {
 }
 
 
-//--------upload image---------
 
 function readURL(input) {
 
