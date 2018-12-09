@@ -80,7 +80,7 @@ a#navbarDropdownMenuLink{
     padding:7px;
 }
 
-#menu1 {
+#menu {
     color: black;
 }
 #menu2 {
@@ -90,7 +90,7 @@ a#navbarDropdownMenuLink{
     color: black;
 }
 
-#menu1:hover{
+#menu:hover{
     text-decoration: underline;
     font-weight: normal;
 }
