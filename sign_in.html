@@ -35,7 +35,10 @@
         </div>
 
     <script>
-        if(isSignedIn){
+        console.log(isSignedIn);
+        var btn = document.getElementById("GoogleSignIn");
+
+        if(btn.innerText === "Signed In"){
             window.location.replace("https://anavikajla.github.io/projectANY/createAccount.html");
         }
     </script>
