@@ -460,6 +460,7 @@ function fuseSearch() {
     var fuse = new Fuse(tutors, options);
     var searchQuery = document.getElementById("search");
     var result = fuse.search(searchQuery.value);
+    console.log(result);
     var parentDiv = document.getElementById("parentDiv");
     parentDiv.innerHTML = '';
     populatePage(result);
