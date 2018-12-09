@@ -18,8 +18,8 @@
             $( "#slider-range" ).slider({
                 range: true,
                 min: 0,
-                max: 300,
-                values: [ 20, 100 ],
+                max: 100,
+                values: [ 0, 10 ],
                 slide: function( event, ui ) {
                     $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
                 }
@@ -118,12 +118,13 @@
                         <!--<label>0</label>-->
                     <!--</div>-->
                 <!--</div>-->
-
+                <div class="mb-4 col-sm-6">
                 <p>
-                    <label for="amount">Price range per hour($):</label>
+                    <label for="amount">Price range per hour:</label>
                     <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
                 </p>
                 <div id="slider-range"></div>
+                </div>
 
 
                 <div class="form-group row text-right">
