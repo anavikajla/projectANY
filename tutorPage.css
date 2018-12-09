@@ -127,3 +127,24 @@ a#tutorPage {
     color: white;
     content-align: center;
 }
+
+#search{
+    margin:8px;
+}
+
+#create{
+    margin:8px;
+    background-color:#000000;
+    color:#ffffff;
+    border-color:#ffffff;
+}
+
+
+/*timeslot*/
+
+table.timelabels  {border-collapse:collapse; border:hidden 1px #ffffff; margin-left:57px;}
+table.timeslots   {border-collapse:collapse; border:solid 1px #006363;}
+table.daysofweek  {border-collapse:collapse; border:hidden 0px #ffffff;}
+.timelabels td    {border-style:hidden; border-width:1px; width:35px; font-size:11px;}
+.timeslots td     {border:solid 1px #006363; width:34px; font-size:12px; background-color:#ffffff;}
+.daysofweek td    {border-style:hidden; border-width:1px; font-size:12px; height:19px;}
