@@ -70,8 +70,6 @@ function initClient() {
 
     gapi.auth2.getAuthInstance().isSignedIn.listen(updateSignInStatus);
     updateSignInStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
-
-    });
 }
 
 function handleClientLoad() {
