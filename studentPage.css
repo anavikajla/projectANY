@@ -100,7 +100,27 @@ a#studentPage{
 
 
 #amount{
-    background-color: #e9ecef;
+    background-color: #F7EBC9;
+}
+
+.btn{
+    background-color: #FFA200;
+    border: none;
+}
+
+#department {
+    border-color: #F7EBC9;
+}
+#search {
+    border-color: #F7EBC9;
+}
+
+#gridRadios1 {
+    border-color: #F7EBC9;
+}
+
+#gridRadios2 {
+    border-color: #F7EBC9;
 }
 
 .jumbotron-heading {
@@ -109,10 +129,10 @@ a#studentPage{
 
 .jumbotron{
     margin-bottom:0px;
+    background-color: #F7EBC9;
 }
 
 #pricerange {
-
 }
 
 
