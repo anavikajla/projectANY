@@ -68,15 +68,8 @@ function initClient() {
     var CLIENT_ID = '629976535368-0mrs4srv347tfffeigktd5c5ih7pqm51.apps.googleusercontent.com';
     var SCOPE = "https://www.googleapis.com/auth/spreadsheets";
 
-    gapi.client.init({
-        'apiKey': API_KEY,
-        'clientId': CLIENT_ID,
-        'scope': SCOPE,
-        'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
-    }).then(function() {
-        gapi.auth2.getAuthInstance().isSignedIn.listen(updateSignInStatus);
-        updateSignInStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
-    });
+    gapi.auth2.getAuthInstance().isSignedIn.listen(updateSignInStatus);
+    updateSignInStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
 }
 
 function handleClientLoad() {
