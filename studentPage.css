@@ -110,10 +110,10 @@ a#studentPage{
 }
 
 #department {
-    border-color: #DDEBF6;
+    border-color: #DFEEF3;
 }
 #search {
-    border-color: #DDEBF6;
+    border-color: #DFEEF3;
 }
 
 .jumbotron-heading {
@@ -122,7 +122,11 @@ a#studentPage{
 
 .jumbotron{
     margin-bottom:0px;
-    background-color: #DDEBF6;
+    background-color: #DFEEF3;
+}
+
+.modal-body {
+    background-color: #DFEEF3;
 }
 
 #pricerange {
