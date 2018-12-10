@@ -106,6 +106,7 @@ a#studentPage{
 .btn{
     background-color: #FFA200;
     border: none;
+    color: white;
 }
 
 #department {
@@ -116,6 +117,10 @@ a#studentPage{
 }
 
 #gridRadios1 {
+    border-color: #F7EBC9;
+}
+
+#gridRadios1:active {
     border-color: #F7EBC9;
 }
 
