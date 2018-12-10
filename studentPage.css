@@ -100,20 +100,7 @@ a#studentPage{
 
 
 #amount{
-    background-color: #DAE6EA;
-}
-
-.btn{
-    background-color: #0491FF;
-    border: none;
-    color: white;
-}
-
-#department {
-    border-color: #DAE6EA;
-}
-#search {
-    border-color: #DAE6EA;
+    background-color: #e9ecef;
 }
 
 .jumbotron-heading {
@@ -121,17 +108,8 @@ a#studentPage{
 }
 
 .jumbotron{
-    margin-bottom:0px;
-    background-color: #DAE6EA;
+    margin-bottom:0;
 }
-
-.modal-body {
-    background-color: #DAE6EA;
-}
-
-#pricerange {
-}
-
 
 #create{
     margin:8px;
